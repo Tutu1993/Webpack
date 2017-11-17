@@ -1,8 +1,8 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const dirVars = require('./base/dirVars.config.js');
-const moduleConifg = require('./inherit/module.config.js');
+const moduleConfig = require('./inherit/module.config.js');
 
-moduleConifg.rules.push({
+moduleConfig.rules.push({
 	test: /\.js$/,
 	exclude: /node_modules/,
 	use: {
@@ -21,7 +21,7 @@ moduleConifg.rules.push({
 	exclude: /node_modules/
 });
 
-moduleConifg.rules.push({
+moduleConfig.rules.push({
 	test: /\.css$/,
 	use: ExtractTextPlugin.extract({
 		fallback: "style-loader",
@@ -38,4 +38,4 @@ moduleConifg.rules.push({
 	exclude: /node_modules/
 });
 
-module.exports = moduleConifg;
+module.exports = moduleConfig;

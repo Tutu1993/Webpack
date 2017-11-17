@@ -1,7 +1,19 @@
 const pluginsConfig = require('./inherit/plugins.config.js');
 const webpack = require('webpack');
-const ManifestPlugin = require('webpack-manifest-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const HashOutput = require('webpack-plugin-hash-output');
+
+pluginsConfig.push(new webpack.optimize.CommonsChunkPlugin({
+	name: 'vendor',
+	filename: 'commons/vendor.[chunkhash:16].js',
+	minChunks: Infinity
+}));
+
+pluginsConfig.push(new webpack.optimize.CommonsChunkPlugin({
+	name: 'runtime',
+	filename: 'commons/runtime.[chunkhash:16].js',
+	minChunks: Infinity
+}));
 
 pluginsConfig.push(new webpack.DefinePlugin({
 	"process.env": {
@@ -9,12 +21,14 @@ pluginsConfig.push(new webpack.DefinePlugin({
 	}
 }));
 
-pluginsConfig.push(new ManifestPlugin());
-
 pluginsConfig.push(new UglifyJSPlugin({
 	sourceMap: true
 }));
 
 pluginsConfig.push(new webpack.HashedModuleIdsPlugin());
+
+pluginsConfig.push(new HashOutput({
+	manifestFiles: 'runtime'
+}));
 
 module.exports = pluginsConfig;

@@ -42,3 +42,7 @@ const render = () => {
 
 render();
 store.subscribe(render);
+
+import cube from 'jsDir/math.js';
+
+console.log(cube(5));

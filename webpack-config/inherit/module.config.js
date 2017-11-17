@@ -17,7 +17,9 @@ module.exports = {
 			use: {
 				loader: "url-loader",
 				options: {
-					limit: 8192
+					limit: 8192,
+					name: 'static/imgs/[hash:16].[ext]',
+					path: dirVars.distDir
 				}
 			},
 			include: dirVars.srcDir,
@@ -26,7 +28,11 @@ module.exports = {
 		{
 			test: /\.(woff|woff2|svg|eot|ttf)$/,
 			use: {
-				loader: "file-loader"
+				loader: "file-loader",
+				options: {
+					name: 'static/fonts/[name].[hash:16].[ext]',
+					path: dirVars.distDir
+				}
 			},
 			include: dirVars.srcDir,
 			exclude: /node_modules/
