@@ -4,7 +4,7 @@
   "description": "webpack",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.prod.config.js",
     "start": "webpack-dev-server --config webpack.dev.config.js --hot --open"
   },
   "repository": {
@@ -48,5 +48,21 @@
   "dependencies": {
     "react": "^16.1.1",
     "react-dom": "^16.1.1"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "semi": 2
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    }
   }
 }

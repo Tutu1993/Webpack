@@ -23,7 +23,6 @@ moduleConifg.rules.push({
 			{
 				loader: "css-loader",
 				options: {
-					modules: true,
 					minimize: true
 				}
 			},

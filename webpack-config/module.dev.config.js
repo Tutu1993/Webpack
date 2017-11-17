@@ -28,10 +28,6 @@ moduleConifg.rules.push({
 		use: [
 			{
 				loader: "css-loader",
-				options: {
-					modules: true,
-					minimize: true
-				}
 			},
 			{
 				loader: "postcss-loader"
