@@ -3,7 +3,8 @@ const outputConfig = require('./webpack-config/output.config.js');
 const moduleConfig = require('./webpack-config/module.dev.config.js');
 const pluginsConfig = require('./webpack-config/plugins.dev.config.js');
 
-outputConfig.filename = '[name].[hash].js';
+outputConfig.filename = '[name].js';
+outputConfig.chunkFilename = '[name].js';
 
 module.exports = {
 	entry: entryConfig,

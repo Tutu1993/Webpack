@@ -12,10 +12,12 @@ const pluginsConfig = [
 		ReactDOM: 'react-dom'
 	}),
 	new webpack.optimize.CommonsChunkPlugin({
-		name: 'vendor'
+		name: 'vendor',
+		minChunks: Infinity
 	}),
 	new webpack.optimize.CommonsChunkPlugin({
-		name: 'runtime'
+		name: 'runtime',
+		minChunks: Infinity
 	})
 ];
 
