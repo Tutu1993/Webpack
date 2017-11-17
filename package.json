@@ -47,7 +47,8 @@
   },
   "dependencies": {
     "react": "^16.1.1",
-    "react-dom": "^16.1.1"
+    "react-dom": "^16.1.1",
+    "redux": "^3.7.2"
   },
   "eslintConfig": {
     "parserOptions": {

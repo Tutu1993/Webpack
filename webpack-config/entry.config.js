@@ -1,4 +1,4 @@
 module.exports = {
-	app: './src/index.js',
-	vendor: ['react', 'react-dom']
+	vendor: ['react', 'react-dom', 'redux'],
+	app: './src/index.js'
 };

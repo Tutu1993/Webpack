@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const pluginsConfig = [
 	new HtmlWebpackPlugin({
-		title: 'Caching',
 		template: 'src/index.html'
 	}),
 	new ExtractTextPlugin('styles.css'),
