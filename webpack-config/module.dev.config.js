@@ -1,6 +1,6 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const dirVars = require('./base/dirVars.config.js');
 const moduleConfig = require('./inherit/module.config.js');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 moduleConfig.rules.push({
 	test: /\.js$/,

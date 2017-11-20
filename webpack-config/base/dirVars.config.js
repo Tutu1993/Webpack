@@ -11,7 +11,8 @@ moduleExports.resourceDir = path.resolve(moduleExports.srcDir, './resource'); //
 
 moduleExports.jsDir = path.resolve(moduleExports.resourceDir, './js'); // js 目录
 
+moduleExports.imgsDir = path.resolve(moduleExports.resourceDir, './imgs'); // imgs 目录
+
 moduleExports.distDir = path.resolve(moduleExports.staticRootDir, './dist'); // dist 目录
 
-console.log(moduleExports);
 module.exports = moduleExports;

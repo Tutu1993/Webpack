@@ -1,5 +1,5 @@
-const pluginsConfig = require('./inherit/plugins.config.js');
 const webpack = require('webpack');
+const pluginsConfig = require('./inherit/plugins.config.js');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const HashOutput = require('webpack-plugin-hash-output');
 

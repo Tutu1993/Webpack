@@ -1,5 +1,5 @@
-const pluginsConfig = require('./inherit/plugins.config.js');
 const webpack = require('webpack');
+const pluginsConfig = require('./inherit/plugins.config.js');
 
 pluginsConfig.push(new webpack.optimize.CommonsChunkPlugin({
 	name: 'vendor',

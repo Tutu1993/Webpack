@@ -1,6 +1,5 @@
 const dirVars = require('../base/dirVars.config.js');
-
-module.exports = {
+const moduleConfig = {
 	rules: [
 		{
 			test: /\.html$/,
@@ -39,3 +38,6 @@ module.exports = {
 		}
 	]
 };
+
+
+module.exports = moduleConfig;

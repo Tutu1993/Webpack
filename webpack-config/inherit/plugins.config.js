@@ -1,10 +1,9 @@
 const path = require('path');
+const webpack = require('webpack');
 const dirVars = require('../base/dirVars.config.js');
 const entryArr = require('../base/entryArr.config.js');
-const webpack = require('webpack');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 const pluginsConfig = [
 	new ExtractTextPlugin('[name]/styles.[contenthash:8].css'),
 	new webpack.ProvidePlugin({
