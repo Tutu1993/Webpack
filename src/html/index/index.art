@@ -1,4 +1,4 @@
-{{extend '../../../resource/component/layout.art'}}
+{{extend '../../resource/component/layout.art'}}
 
 {{block 'meta'}}{{/block}}
 
@@ -8,5 +8,6 @@
 
 {{block 'content'}}
 	<div id="root"></div>
-	<img src="../../../resource/imgs/index.png" />
+	<a href="/login">跳转链接</a>
+	<img src="../../resource/imgs/index.png" />
 {{/block}}

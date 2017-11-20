@@ -4,6 +4,11 @@ const options = {
 	cwd: dirVars.htmlDir,
 	sync: true
 };
-const globInstance = new Glob('!(_)*/!(_)*', options);
+const primaryEntry = new Glob('*/*.*', options).found;
+const multipleEntry = new Glob('!(_)*/!(*.*)', options).found;
 
-module.exports = globInstance.found;
+primaryEntry.forEach((value, index) => {
+	primaryEntry[index] = value.split('/')[0];
+});
+
+module.exports = primaryEntry.concat(multipleEntry);

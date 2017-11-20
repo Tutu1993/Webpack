@@ -21,4 +21,10 @@ entryArr.forEach(entry => {
 	pluginsConfig.push(htmlPlugin);
 });
 
+pluginsConfig.push(new HtmlWebpackPlugin({
+	filename: 'index.html',
+	template: path.resolve(dirVars.htmlDir, 'index/index.art'),
+	chunks: ['vendor', 'runtime', 'index']
+}));
+
 module.exports = pluginsConfig;
