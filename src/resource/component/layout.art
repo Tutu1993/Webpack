@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	{{block 'meta'}}{{/block}}
+	<title>{{block 'title'}}{{/block}}</title>
+	{{block 'link'}}{{/block}}
+</head>
+
+<body>
+	{{include './header.art'}}
+	{{block 'content'}}{{/block}}
+	{{include './footer.art'}}
+</body>
+
+</html>

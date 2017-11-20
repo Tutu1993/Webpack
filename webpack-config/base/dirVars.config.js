@@ -13,6 +13,8 @@ moduleExports.jsDir = path.resolve(moduleExports.resourceDir, './js'); // js 目
 
 moduleExports.imgsDir = path.resolve(moduleExports.resourceDir, './imgs'); // imgs 目录
 
+moduleExports.componentDir = path.resolve(moduleExports.resourceDir, './component'); // component 目录
+
 moduleExports.distDir = path.resolve(moduleExports.staticRootDir, './dist'); // dist 目录
 
 module.exports = moduleExports;

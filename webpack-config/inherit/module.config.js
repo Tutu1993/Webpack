@@ -12,6 +12,16 @@ const moduleConfig = {
 			exclude: /node_modules/
 		},
 		{
+			test: /\.art$/,
+			use: [
+				{
+					loader: "art-template-loader"
+				}
+			],
+			include: dirVars.srcDir,
+			exclude: /node_modules/
+		},
+		{
 			test: /\.(png|jpg|gif)$/,
 			use: {
 				loader: "url-loader",
