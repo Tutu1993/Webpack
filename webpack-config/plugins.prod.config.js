@@ -5,13 +5,13 @@ const HashOutput = require('webpack-plugin-hash-output');
 
 pluginsConfig.push(new webpack.optimize.CommonsChunkPlugin({
 	name: 'vendor',
-	filename: 'commons/vendor.[chunkhash:16].js',
+	filename: 'commons/vendor.[chunkhash:8].js',
 	minChunks: Infinity
 }));
 
 pluginsConfig.push(new webpack.optimize.CommonsChunkPlugin({
 	name: 'runtime',
-	filename: 'commons/runtime.[chunkhash:16].js',
+	filename: 'commons/runtime.[chunkhash:8].js',
 	minChunks: Infinity
 }));
 

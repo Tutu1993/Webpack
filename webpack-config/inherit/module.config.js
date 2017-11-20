@@ -18,7 +18,7 @@ module.exports = {
 				loader: "url-loader",
 				options: {
 					limit: 8192,
-					name: 'static/imgs/[hash:16].[ext]',
+					name: 'static/imgs/[hash:8].[ext]',
 					path: dirVars.distDir
 				}
 			},
@@ -30,7 +30,7 @@ module.exports = {
 			use: {
 				loader: "file-loader",
 				options: {
-					name: 'static/fonts/[name].[hash:16].[ext]',
+					name: 'static/fonts/[name].[hash:8].[ext]',
 					path: dirVars.distDir
 				}
 			},

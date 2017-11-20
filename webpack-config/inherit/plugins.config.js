@@ -6,7 +6,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const pluginsConfig = [
-	new ExtractTextPlugin('[name]/styles.[contenthash].css'),
+	new ExtractTextPlugin('[name]/styles.[contenthash:8].css'),
 	new webpack.ProvidePlugin({
 		React: 'react',
 		ReactDOM: 'react-dom'
