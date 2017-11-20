@@ -10,5 +10,5 @@ const multipleEntry = new Glob('!(_)*/!(*.*)', options).found;
 primaryEntry.forEach((value, index) => {
 	primaryEntry[index] = value.split('/')[0];
 });
-console.log(primaryEntry.concat(multipleEntry));
+
 module.exports = primaryEntry.concat(multipleEntry);
