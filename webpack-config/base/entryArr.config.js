@@ -4,11 +4,11 @@ const options = {
 	cwd: dirVars.htmlDir,
 	sync: true
 };
-const primaryEntry = new Glob('*/*.*', options).found;
+const primaryEntry = new Glob('*/*.art', options).found;
 const multipleEntry = new Glob('!(_)*/!(*.*)', options).found;
 
 primaryEntry.forEach((value, index) => {
 	primaryEntry[index] = value.split('/')[0];
 });
-
+console.log(primaryEntry.concat(multipleEntry));
 module.exports = primaryEntry.concat(multipleEntry);
