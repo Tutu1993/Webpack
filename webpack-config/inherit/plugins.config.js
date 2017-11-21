@@ -16,7 +16,7 @@ entryArr.forEach(entry => {
 	const htmlPlugin = new HtmlWebpackPlugin({
 		filename: `${entry}/index.html`,
 		template: path.resolve(dirVars.htmlDir, `${entry}/index.art`),
-		chunks: ['vendor', 'runtime', entry]
+		chunks: ['runtime','vendor', entry]
 	});
 	pluginsConfig.push(htmlPlugin);
 });
@@ -24,7 +24,7 @@ entryArr.forEach(entry => {
 pluginsConfig.push(new HtmlWebpackPlugin({
 	filename: 'index.html',
 	template: path.resolve(dirVars.htmlDir, 'index/index.art'),
-	chunks: ['vendor', 'runtime', 'index']
+	chunks: ['runtime', 'vendor', 'index']
 }));
 
 module.exports = pluginsConfig;
