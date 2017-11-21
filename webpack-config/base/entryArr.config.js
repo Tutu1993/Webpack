@@ -1,5 +1,5 @@
-const Glob = require('glob').Glob;
 const dirVars = require('./dirVars.config.js');
+const Glob = require('glob').Glob;
 const options = {
 	cwd: dirVars.htmlDir,
 	sync: true
@@ -10,6 +10,7 @@ const multipleEntry = new Glob('!(_)*/!(*.*)/*.art', options).found;
 primaryEntry.forEach((value, index) => {
 	primaryEntry[index] = value.split('/')[0];
 });
+
 multipleEntry.forEach((value, index) => {
 	const mArray = value.split('/');
 	mArray.pop();
