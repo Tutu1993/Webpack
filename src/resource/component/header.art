@@ -1,5 +1,13 @@
-<!-- header-part-start -->
-	<section>
-		<p>Header</p>
-	</section>
-<!-- header-part-end -->
+<nav class="public-nav">
+	<div>
+		<ul>
+			<li><a href="/" class="logo logo-white"></a></li>
+			<li><a href="/">零号元素</a></li>
+			<li><a href="/">投资招募</a></li>
+			<li><a href="/">公司介绍</a></li>
+			<li><a href="/">新闻动态</a></li>
+			<li><a href="/">创始人</a></li>
+			<li><a href="/">投资人</a></li>
+		</ul>
+	</div>
+</nav>

@@ -8,7 +8,8 @@ const pluginsConfig = [
 	new ExtractTextPlugin('[name]/styles.[contenthash:8].css'),
 	new webpack.ProvidePlugin({
 		React: 'react',
-		ReactDOM: 'react-dom'
+		ReactDOM: 'react-dom',
+		PropTypes: 'prop-types'
 	})
 ];
 
