@@ -1,7 +1,17 @@
 <nav class="public-nav">
 	<div>
-		<ul>
-			<li><a href="/" class="logo logo-white"></a></li>
+		<input type="checkbox" id="nav-icon"/>
+		<ul class="nav-header">
+			<li class="icon">
+				<label for="nav-icon">
+					<span></span>
+					<span></span>
+				</label>
+			</li>
+			<li><a href="/" class="logo"></a></li>
+		</ul>
+		<ul class="nav-list">
+			<li><a href="/" class="logo"></a></li>
 			<li><a href="/">零号元素</a></li>
 			<li><a href="/">投资招募</a></li>
 			<li><a href="/">公司介绍</a></li>

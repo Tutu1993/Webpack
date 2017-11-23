@@ -8,7 +8,7 @@ nav.public-nav {
   margin: 0;
   width: 100%;
   min-width: 1024px;
-  height: 44px;
+  height: 48px;
   max-height: 44px;
   background: #333;
   background: rgba(0,0,0,0.8);
@@ -21,51 +21,123 @@ nav.public-nav > div {
   padding: 0 22px;
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
-nav.public-nav ul {
+nav.public-nav > div input[type='checkbox'] {
+  display: none;
+}
+nav.public-nav > div ul {
   list-style: none;
-  margin: 0 -10px;
   padding: 0;
   width: auto;
+  position: relative;
+}
+nav.public-nav > div ul li {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  vertical-align: top;
+}
+nav.public-nav > div ul li a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 10px;
+}
+nav.public-nav > div ul li a:hover {
+  opacity: 0.65;
+}
+nav.public-nav > div ul li a.logo {
+  width: 24px;
+  background: url("../imgs/logo-white.png") center center no-repeat;
+  background-size: 24px 24px;
+}
+ul.nav-header {
+  display: none;
+  margin: 0 -22px;
+  height: 48px;
+  text-align: center;
+}
+ul.nav-header li {
+  height: 48px;
+}
+ul.nav-header li a {
+  height: 48px;
+  line-height: 48px;
+}
+ul.nav-header li.icon {
+  display: block;
+  width: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+ul.nav-header li.icon label {
+  cursor: pointer;
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+}
+ul.nav-header li.icon label:hover {
+  opacity: 0.65;
+}
+ul.nav-header li.icon label span {
+  display: block;
+  width: 17px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  left: 16px;
+}
+ul.nav-header li.icon label span:first-child {
+  top: 20px;
+}
+ul.nav-header li.icon label span:last-child {
+  bottom: 20px;
+}
+ul.nav-list {
+  margin: 0 -10px;
   height: 44px;
   text-align: justify;
   position: relative;
 }
-nav.public-nav ul:after {
+ul.nav-list:after {
   content: '';
   display: inline-block;
   width: 100%;
   position: relative;
 }
-nav.public-nav ul li {
-  display: inline-block;
-  position: relative;
+ul.nav-list li {
   height: 44px;
-  z-index: 1;
-  vertical-align: top;
 }
-nav.public-nav ul li a {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
+ul.nav-list li a {
   height: 44px;
   line-height: 44px;
-  color: #fff;
-  padding: 0 10px;
-}
-nav.public-nav ul li a.logo {
-  width: 24px;
-}
-nav.public-nav ul li a.logo-red {
-  background: url("../imgs/logo-red.png") center center no-repeat;
-  background-size: 24px 24px;
-}
-nav.public-nav ul li a.logo-white {
-  background: url("../imgs/logo-white.png") center center no-repeat;
-  background-size: 24px 24px;
 }
 @media only screen and (max-width: 1044px) {
   nav.public-nav {
     min-width: 320px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  nav.public-nav {
+    max-height: 48px;
+  }
+  nav.public-nav ul.nav-header {
+    display: block;
+  }
+  nav.public-nav ul.nav-list {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 48px;
+    height: auto;
+    overflow: hidden;
   }
 }
