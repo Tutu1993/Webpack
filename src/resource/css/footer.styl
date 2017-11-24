@@ -1,0 +1,52 @@
+footer.public-footer
+	background-color #f2f2f2
+	color #333
+	min-width 1024px
+	overflow hidden
+	position relative
+	z-index 1
+	font-size 12px
+	> div
+		margin 0 auto
+		max-width 980px
+		padding 0 22px
+nav.footer-nav
+	padding-top 40px
+	> div
+		&:after
+			content ''
+			clear both
+			display block
+			height 0
+		> input[type = 'checkbox']
+			display none
+		> div
+			box-sizing border-box
+			position relative
+			z-index 1
+			margin 0
+			padding 0
+			float left
+			min-height 2px
+			width 20%
+			line-height 1.27273
+			> label
+				> h3
+					font-size 12px
+					margin 0
+					margin-bottom 6px
+					font-weight 600
+			> ul
+				padding 0
+				margin 0
+				margin-right 20px
+				list-style none
+				> li
+					display block
+					&:not(:last-child)
+						margin-bottom 6px
+					> a
+						color #555
+						text-decoration none
+						&:hover
+							text-decoration underline

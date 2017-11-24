@@ -1,5 +1,28 @@
-<!-- footer-part-start -->
-	<section>
-		<p>Footer</p>
-	</section>
-<!-- footer-part-end -->
+
+<footer class="public-footer">
+	<div>
+		<nav class="footer-nav">
+			<div>
+				<input type="checkbox" id="footer-box-1"/>
+				<div>
+					<label for="footer-box-1">
+						<h3>Shop and Learn</h3>
+					</label>
+					<ul>
+						<li><a href="">Mac</a></li>
+						<li><a href="">iPad</a></li>
+						<li><a href="">iPhone</a></li>
+						<li><a href="">Watch</a></li>
+						<li><a href="">TV</a></li>
+						<li><a href="">Music</a></li>
+						<li><a href="">iTunes</a></li>
+						<li><a href="">HomePod</a></li>
+						<li><a href="">iPod touch</a></li>
+						<li><a href="">Accessories</a></li>
+						<li><a href="">Gift Cards</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</footer>

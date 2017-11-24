@@ -9,4 +9,5 @@
 {{block 'content'}}
 	<div style="height: 200px;"></div>
 	<h1>Hello World!</h1>
+	<div style="height: 200px;"></div>
 {{/block}}
