@@ -1,11 +1,11 @@
+<input type="checkbox" id="nav-icon"/>
 <nav class="public-nav">
 	<div>
-		<input type="checkbox" id="nav-icon"/>
 		<ul class="nav-header">
 			<li class="icon">
 				<label for="nav-icon">
-					<span></span>
-					<span></span>
+					<span><span></span></span>
+					<span><span></span></span>
 				</label>
 			</li>
 			<li><a href="/" class="logo"></a></li>

@@ -1,3 +1,5 @@
+#nav-icon
+	display none
 nav.public-nav
 	position fixed
 	top 0
@@ -21,8 +23,6 @@ nav.public-nav
 		position: relative
 		z-index: 2
 		overflow hidden
-		input[type='checkbox']
-			display none
 		ul
 			list-style none
 			padding 0
@@ -39,6 +39,7 @@ nav.public-nav
 					font-size 14px
 					color #fff
 					padding 0 10px
+					transition opacity .25s
 					&:hover
 						opacity .65
 				a.logo
@@ -68,19 +69,31 @@ ul.nav-header
 			width 48px
 			height 48px
 			position absolute
-			&:hover
-				opacity .65
-			span
-				display block
-				width 17px
-				height 1px
-				background #fff
+			transition transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99)
+			> span
 				position absolute
-				left 16px
+				width 48px
+				height 48px
+				top 0
+				left 0
+				transition transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99)
+				> span
+					display block
+					width 17px
+					height 1px
+					background #fff
+					position absolute
+					left 16px
+					font-size 0
+					transition transform 0.2s 0.2s, -webkit-transform 0.2s 0.2s
 				&:first-child
-					top 20px
+					> span
+						top 23px
+						transform translateY(-3px)
 				&:last-child
-					bottom 20px
+					> span
+						bottom 23px
+						transform translateY(3px)
 ul.nav-list
 	margin 0 -10px
 	height 44px
@@ -90,7 +103,8 @@ ul.nav-list
 		content ''
 		display inline-block
 		width 100%
-		position relative
+		font-size 0
+		ling-height 0
 	li
 		height 44px
 		a
@@ -101,9 +115,24 @@ ul.nav-list
 		min-width 320px
 @media only screen and (max-width: 767px)
 	nav.public-nav
-		max-height 48px
+		max-height none
+		transition background 0.35s linear,height 0.35s ease-in 200ms
+		> div
+			padding 0
+			width 100%
+			height 100%
+			top 0
+			position absolute
 		ul.nav-header
 			display block
+			margin 0
+			li.icon
+				label
+					transform rotate(0)
+					> span:first-child
+						transform rotate(0)
+					> span:last-child
+						transform rotate(0)
 		ul.nav-list
 			position absolute
 			top 48px
@@ -114,3 +143,55 @@ ul.nav-list
 			padding 0 48px
 			height auto
 			overflow hidden
+			box-sizing border-box
+			transition visibility 0s linear 1s
+			visibility hidden
+			li
+				display block
+				height 43px
+				border-bottom 1px solid #333
+				opacity 0
+				transform scale(1.1) translateY(-24px)
+				transition opacity 0.35s ease-out, transform 0.35s ease-out, -webkit-transform 0.35s ease-out
+				a
+					display block
+					width auto
+					max-width none
+					padding 0
+					font-size 17px
+			li:first-child
+				display none
+			li:nth-child(2)
+				margin-top 20px
+				transition-delay 300ms,300ms
+			li:nth-child(3)
+				transition-delay 350ms,350ms
+			li:nth-child(4)
+				transition-delay 400ms,400ms
+			li:nth-child(5)
+				transition-delay 450ms,450ms
+			li:nth-child(6)
+				transition-delay 500ms,500ms
+			li:nth-child(7)
+				transition-delay 550ms,550ms
+	#nav-icon:checked ~ nav.public-nav
+		height 100%
+		background #000
+		max-height none
+		ul.nav-header
+			li.icon
+				label
+					transform rotate(90deg)
+					> span
+						> span
+							transform translateY(0)
+					> span:first-child
+						transform rotate(45deg)
+					> span:last-child
+						transform rotate(-45deg)
+		ul.nav-list
+			visibility visible
+			transition-delay 0s
+			li
+				opacity 1
+				transform none

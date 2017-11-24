@@ -1,3 +1,6 @@
+#nav-icon {
+  display: none;
+}
 nav.public-nav {
   position: fixed;
   top: 0;
@@ -23,9 +26,6 @@ nav.public-nav > div {
   z-index: 2;
   overflow: hidden;
 }
-nav.public-nav > div input[type='checkbox'] {
-  display: none;
-}
 nav.public-nav > div ul {
   list-style: none;
   padding: 0;
@@ -44,6 +44,7 @@ nav.public-nav > div ul li a {
   font-size: 14px;
   color: #fff;
   padding: 0 10px;
+  transition: opacity 0.25s;
 }
 nav.public-nav > div ul li a:hover {
   opacity: 0.65;
@@ -80,23 +81,33 @@ ul.nav-header li.icon label {
   width: 48px;
   height: 48px;
   position: absolute;
+  transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
-ul.nav-header li.icon label:hover {
-  opacity: 0.65;
+ul.nav-header li.icon label > span {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+  transition: transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
-ul.nav-header li.icon label span {
+ul.nav-header li.icon label > span > span {
   display: block;
   width: 17px;
   height: 1px;
   background: #fff;
   position: absolute;
   left: 16px;
+  font-size: 0;
+  transition: transform 0.2s 0.2s, -webkit-transform 0.2s 0.2s;
 }
-ul.nav-header li.icon label span:first-child {
-  top: 20px;
+ul.nav-header li.icon label > span:first-child > span {
+  top: 23px;
+  transform: translateY(-3px);
 }
-ul.nav-header li.icon label span:last-child {
-  bottom: 20px;
+ul.nav-header li.icon label > span:last-child > span {
+  bottom: 23px;
+  transform: translateY(3px);
 }
 ul.nav-list {
   margin: 0 -10px;
@@ -108,7 +119,8 @@ ul.nav-list:after {
   content: '';
   display: inline-block;
   width: 100%;
-  position: relative;
+  font-size: 0;
+  ling-height: 0;
 }
 ul.nav-list li {
   height: 44px;
@@ -124,10 +136,28 @@ ul.nav-list li a {
 }
 @media only screen and (max-width: 767px) {
   nav.public-nav {
-    max-height: 48px;
+    max-height: none;
+    transition: background 0.35s linear, height 0.35s ease-in 200ms;
+  }
+  nav.public-nav > div {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
   }
   nav.public-nav ul.nav-header {
     display: block;
+    margin: 0;
+  }
+  nav.public-nav ul.nav-header li.icon label {
+    transform: rotate(0);
+  }
+  nav.public-nav ul.nav-header li.icon label > span:first-child {
+    transform: rotate(0);
+  }
+  nav.public-nav ul.nav-header li.icon label > span:last-child {
+    transform: rotate(0);
   }
   nav.public-nav ul.nav-list {
     position: absolute;
@@ -139,5 +169,70 @@ ul.nav-list li a {
     padding: 0 48px;
     height: auto;
     overflow: hidden;
+    box-sizing: border-box;
+    transition: visibility 0s linear 1s;
+    visibility: hidden;
+  }
+  nav.public-nav ul.nav-list li {
+    display: block;
+    height: 43px;
+    border-bottom: 1px solid #333;
+    opacity: 0;
+    transform: scale(1.1) translateY(-24px);
+    transition: opacity 0.35s ease-out, transform 0.35s ease-out, -webkit-transform 0.35s ease-out;
+  }
+  nav.public-nav ul.nav-list li a {
+    display: block;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    font-size: 17px;
+  }
+  nav.public-nav ul.nav-list li:first-child {
+    display: none;
+  }
+  nav.public-nav ul.nav-list li:nth-child(2) {
+    margin-top: 20px;
+    transition-delay: 300ms, 300ms;
+  }
+  nav.public-nav ul.nav-list li:nth-child(3) {
+    transition-delay: 350ms, 350ms;
+  }
+  nav.public-nav ul.nav-list li:nth-child(4) {
+    transition-delay: 400ms, 400ms;
+  }
+  nav.public-nav ul.nav-list li:nth-child(5) {
+    transition-delay: 450ms, 450ms;
+  }
+  nav.public-nav ul.nav-list li:nth-child(6) {
+    transition-delay: 500ms, 500ms;
+  }
+  nav.public-nav ul.nav-list li:nth-child(7) {
+    transition-delay: 550ms, 550ms;
+  }
+  #nav-icon:checked ~ nav.public-nav {
+    height: 100%;
+    background: #000;
+    max-height: none;
+  }
+  #nav-icon:checked ~ nav.public-nav ul.nav-header li.icon label {
+    transform: rotate(90deg);
+  }
+  #nav-icon:checked ~ nav.public-nav ul.nav-header li.icon label > span > span {
+    transform: translateY(0);
+  }
+  #nav-icon:checked ~ nav.public-nav ul.nav-header li.icon label > span:first-child {
+    transform: rotate(45deg);
+  }
+  #nav-icon:checked ~ nav.public-nav ul.nav-header li.icon label > span:last-child {
+    transform: rotate(-45deg);
+  }
+  #nav-icon:checked ~ nav.public-nav ul.nav-list {
+    visibility: visible;
+    transition-delay: 0s;
+  }
+  #nav-icon:checked ~ nav.public-nav ul.nav-list li {
+    opacity: 1;
+    transform: none;
   }
 }
