@@ -35,12 +35,12 @@
   position: absolute;
   height: 48px;
 }
-.global-nav .gn-header li:hover {
-  opacity: 0.65;
-}
 .global-nav .gn-header li:last-child {
   top: 0;
   left: calc(50% - 20px);
+}
+.global-nav .gn-header li:last-child:hover {
+  opacity: 0.65;
 }
 .global-nav .gn-header li:last-child a {
   display: inline-block;
