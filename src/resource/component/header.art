@@ -1,23 +1,22 @@
-<input type="checkbox" id="nav-icon"/>
-<nav class="public-nav">
-	<div>
-		<ul class="nav-header">
-			<li class="icon">
-				<label for="nav-icon">
+<input type="checkbox" id="gn-menustate"/>
+<nav class="global-nav">
+	<div class="gn-content">
+		<ul class="gn-header">
+			<li class="gn-menuicon">
+				<label for="gn-menustate">
 					<span><span></span></span>
 					<span><span></span></span>
 				</label>
 			</li>
-			<li><a href="/" class="logo"></a></li>
+			<li><a href="" class="gn-logo"></a></li>
 		</ul>
-		<ul class="nav-list">
-			<li><a href="/" class="logo"></a></li>
-			<li><a href="/">零号元素</a></li>
-			<li><a href="/">投资招募</a></li>
-			<li><a href="/">公司介绍</a></li>
-			<li><a href="/">新闻动态</a></li>
-			<li><a href="/">创始人</a></li>
-			<li><a href="/">投资人</a></li>
+		<ul class="gn-list">
+			<li class="gn-item"><a href="" class="gn-logo"></a></li>
+			<li class="gn-item"><a href="">投资招募</a></li>
+			<li class="gn-item"><a href="">公司介绍</a></li>
+			<li class="gn-item"><a href="">新闻动态</a></li>
+			<li class="gn-item"><a href="">创始人</a></li>
+			<li class="gn-item"><a href="">投资人</a></li>
 		</ul>
 	</div>
 </nav>

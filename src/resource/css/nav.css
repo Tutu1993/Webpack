@@ -1,237 +1,217 @@
-#nav-icon {
+#gn-menustate {
   display: none;
 }
-nav.public-nav {
+.global-nav {
+  display: block;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 9999;
-  display: block;
-  margin: 0;
   width: 100%;
   min-width: 1024px;
   height: 48px;
   max-height: 44px;
-  background: #333;
+  font-size: 0;
   background: rgba(0,0,0,0.8);
-  font-size: 14px;
+  z-index: 9999;
   user-select: none;
 }
-nav.public-nav > div {
-  margin: 0 auto;
-  max-width: 980px;
-  padding: 0 22px;
+.global-nav .gn-content {
   position: relative;
-  z-index: 2;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 22px;
   overflow: hidden;
 }
-nav.public-nav > div ul {
-  list-style: none;
-  padding: 0;
-  width: auto;
-  position: relative;
-}
-nav.public-nav > div ul li {
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  vertical-align: top;
-}
-nav.public-nav > div ul li a {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  color: #fff;
-  padding: 0 10px;
-  transition: opacity 0.25s;
-}
-nav.public-nav > div ul li a:hover {
-  opacity: 0.65;
-}
-nav.public-nav > div ul li a.logo {
-  width: 24px;
-  background: url("../imgs/logo-white.png") center center no-repeat;
-  background-size: 24px 24px;
-}
-ul.nav-header {
+.global-nav .gn-header {
   display: none;
-  margin: 0 -22px;
+  position: absolute;
+  width: 100%;
   height: 48px;
-  text-align: center;
+  top: 0;
+  left: 0;
 }
-ul.nav-header li {
+.global-nav .gn-header li {
+  position: absolute;
   height: 48px;
 }
-ul.nav-header li a {
+.global-nav .gn-header li:last-child {
+  top: 0;
+  left: calc(50% - 20px);
+}
+.global-nav .gn-header li:last-child a {
+  display: inline-block;
   height: 48px;
   line-height: 48px;
+  padding: 0 10px;
 }
-ul.nav-header li.icon {
-  display: block;
-  width: 48px;
+.global-nav .gn-menuicon {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 3;
+  width: 48px;
 }
-ul.nav-header li.icon label {
-  cursor: pointer;
+.global-nav .gn-menuicon label {
   display: block;
+  position: absolute;
   width: 48px;
   height: 48px;
-  position: absolute;
+  cursor: pointer;
+  transform: rotate(0);
   transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
-ul.nav-header li.icon label > span {
+.global-nav .gn-menuicon label > span {
   position: absolute;
-  width: 48px;
-  height: 48px;
   top: 0;
   left: 0;
+  width: 48px;
+  height: 48px;
   transition: transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
 }
-ul.nav-header li.icon label > span > span {
+.global-nav .gn-menuicon label > span > span {
   display: block;
+  position: absolute;
+  left: 16px;
   width: 17px;
   height: 1px;
   background: #fff;
-  position: absolute;
-  left: 16px;
-  font-size: 0;
   transition: transform 0.2s 0.2s, -webkit-transform 0.2s 0.2s;
 }
-ul.nav-header li.icon label > span:first-child > span {
+.global-nav .gn-menuicon label > span:first-child > span {
   top: 23px;
+  transform: rotate(0);
   transform: translateY(-3px);
 }
-ul.nav-header li.icon label > span:last-child > span {
+.global-nav .gn-menuicon label > span:last-child > span {
   bottom: 23px;
+  transform: rotate(0);
   transform: translateY(3px);
 }
-ul.nav-list {
-  margin: 0 -10px;
+.global-nav .gn-list {
+  width: auto;
   height: 44px;
+  margin: 0 -10px;
   text-align: justify;
-  position: relative;
 }
-ul.nav-list:after {
+.global-nav .gn-list:after {
   content: '';
   display: inline-block;
   width: 100%;
   font-size: 0;
-  ling-height: 0;
+  line-height: 0;
 }
-ul.nav-list li {
+.global-nav .gn-item {
+  display: inline-block;
+  position: relative;
   height: 44px;
+  vertical-align: top;
 }
-ul.nav-list li a {
+.global-nav .gn-item a {
+  display: inline-block;
   height: 44px;
   line-height: 44px;
+  padding: 0 10px;
+  font-size: 1.3rem;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.global-nav .gn-item a:hover {
+  opacity: 0.65;
+}
+.global-nav .gn-logo {
+  width: 20px;
+  background: url("../imgs/logo-white.png") center center no-repeat;
+  background-size: 20px 20px;
 }
 @media only screen and (max-width: 1044px) {
-  nav.public-nav {
+  .global-nav {
     min-width: 320px;
   }
 }
 @media only screen and (max-width: 767px) {
-  nav.public-nav {
+  .global-nav {
     max-height: none;
-    transition: background 0.35s linear, height 0.35s ease-in 200ms;
+    transition: background 0.35s linear, height 0.35s ease-in 0.2s;
   }
-  nav.public-nav > div {
-    padding: 0;
+  .global-nav .gn-content {
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
-    top: 0;
-    position: absolute;
+    padding: 0;
   }
-  nav.public-nav ul.nav-header {
+  .global-nav .gn-header {
     display: block;
-    margin: 0;
   }
-  nav.public-nav ul.nav-header li.icon label {
-    transform: rotate(0);
-  }
-  nav.public-nav ul.nav-header li.icon label > span:first-child {
-    transform: rotate(0);
-  }
-  nav.public-nav ul.nav-header li.icon label > span:last-child {
-    transform: rotate(0);
-  }
-  nav.public-nav ul.nav-list {
+  .global-nav .gn-list {
     position: absolute;
     top: 48px;
     right: 0;
     bottom: 0;
     left: 0;
+    height: auto;
     margin: 0;
     padding: 0 48px;
-    height: auto;
     overflow: hidden;
-    box-sizing: border-box;
     transition: visibility 0s linear 1s;
     visibility: hidden;
   }
-  nav.public-nav ul.nav-list li {
-    display: block;
+  .global-nav .gn-item {
+    width: 100%;
     height: 43px;
     border-bottom: 1px solid #333;
     opacity: 0;
     transform: scale(1.1) translateY(-24px);
     transition: opacity 0.35s ease-out, transform 0.35s ease-out, -webkit-transform 0.35s ease-out;
   }
-  nav.public-nav ul.nav-list li a {
+  .global-nav .gn-item a {
     display: block;
     width: auto;
     max-width: none;
     padding: 0;
-    font-size: 17px;
+    font-size: 1.7rem;
   }
-  nav.public-nav ul.nav-list li:first-child {
+  .global-nav .gn-item:nth-child(1) {
     display: none;
   }
-  nav.public-nav ul.nav-list li:nth-child(2) {
+  .global-nav .gn-item:nth-child(2) {
     margin-top: 20px;
-    transition-delay: 300ms, 300ms;
+    transition-delay: 0.35s, 0.35s;
   }
-  nav.public-nav ul.nav-list li:nth-child(3) {
-    transition-delay: 350ms, 350ms;
+  .global-nav .gn-item:nth-child(3) {
+    transition-delay: 0.4s, 0.4s;
   }
-  nav.public-nav ul.nav-list li:nth-child(4) {
-    transition-delay: 400ms, 400ms;
+  .global-nav .gn-item:nth-child(4) {
+    transition-delay: 0.45s, 0.45s;
   }
-  nav.public-nav ul.nav-list li:nth-child(5) {
-    transition-delay: 450ms, 450ms;
+  .global-nav .gn-item:nth-child(5) {
+    transition-delay: 0.5s, 0.5s;
   }
-  nav.public-nav ul.nav-list li:nth-child(6) {
-    transition-delay: 500ms, 500ms;
+  .global-nav .gn-item:nth-child(6) {
+    transition-delay: 0.55s, 0.55s;
   }
-  nav.public-nav ul.nav-list li:nth-child(7) {
-    transition-delay: 550ms, 550ms;
-  }
-  #nav-icon:checked ~ nav.public-nav {
+  #gn-menustate:checked ~ .global-nav {
     height: 100%;
     background: #000;
-    max-height: none;
   }
-  #nav-icon:checked ~ nav.public-nav ul.nav-header li.icon label {
+  #gn-menustate:checked ~ .global-nav .gn-menuicon label {
     transform: rotate(90deg);
   }
-  #nav-icon:checked ~ nav.public-nav ul.nav-header li.icon label > span > span {
+  #gn-menustate:checked ~ .global-nav .gn-menuicon label > span > span {
     transform: translateY(0);
   }
-  #nav-icon:checked ~ nav.public-nav ul.nav-header li.icon label > span:first-child {
+  #gn-menustate:checked ~ .global-nav .gn-menuicon label > span:first-child {
     transform: rotate(45deg);
   }
-  #nav-icon:checked ~ nav.public-nav ul.nav-header li.icon label > span:last-child {
+  #gn-menustate:checked ~ .global-nav .gn-menuicon label > span:last-child {
     transform: rotate(-45deg);
   }
-  #nav-icon:checked ~ nav.public-nav ul.nav-list {
+  #gn-menustate:checked ~ .global-nav .gn-list {
     visibility: visible;
     transition-delay: 0s;
   }
-  #nav-icon:checked ~ nav.public-nav ul.nav-list li {
+  #gn-menustate:checked ~ .global-nav .gn-item {
     opacity: 1;
     transform: none;
   }

@@ -1,52 +1,193 @@
-footer.public-footer
-	background-color #f2f2f2
-	color #333
+.global-footer
+	position relative
 	min-width 1024px
 	overflow hidden
+	color #333
+	background-color #f2f2f2
+	z-index 1
+	font-size 0
+	a
+		&:hover
+			text-decoration underline
+.global-footer .gf-content
+	max-width 980px
+	margin 0 auto
+	padding 0 22px
+.global-footer .gf-directory
+	padding-top 40px
 	position relative
 	z-index 1
-	font-size 12px
 	> div
-		margin 0 auto
-		max-width 980px
-		padding 0 22px
-nav.footer-nav
-	padding-top 40px
-	> div
-		&:after
-			content ''
-			clear both
-			display block
-			height 0
-		> input[type = 'checkbox']
+		float left
+		width 20%
+		position relative
+		min-height 2px
+		input[type = 'checkbox']
 			display none
+	&:after
+		content ''
+		clear both
+		display block
+		height 0
+.global-footer .gf-directory-column
+	position relative
+	width 100%
+	min-height 2px
+	label
+		h3
+			font-size 10px
+			line-height 14px
+			font-weight 600
+			margin-bottom 6px
+			user-select none
+	~ .gf-directory-column
+		padding-top 24px
+.global-footer .gf-directory-list
+	margin-right 20px
+	li
+		dispaly block
+		&:not(:last-child)
+			margin-bottom 6px
+		a
+			color #555
+			font-size 10px
+			line-height 14px
+.global-footer .gf-footer
+	padding 34px 0 21px
+	color #888
+	> p
+		font-size 10px
+		line-height 16px
+		color #999
+		a
+			color #999
+.global-footer .gf-footer-shop
+	margin-bottom 7px
+	padding-bottom 6px
+	border-bottom 1px solid #d6d6d6
+	font-size 10px
+	line-height 16px
+	a
+		color #0070c9
+.global-footer .gf-footer-locale
+	float right
+	position relative
+	z-index 2
+	padding-top 3px
+	a
+		display block
+		height 16px
+		padding-left 20px
+		background url('../imgs/logo-red.png') left center no-repeat
+		background-size 16px 16px
+		font-size 10px
+		line-height 18px
+		color #555
+.global-footer .gf-footer-legal
+	position relative
+	padding 3px 0
+	div
+		float left
+	&:after
+		content ''
+		clear both
+		display block
+		height 0
+.global-footer .gf-footer-legal-copyright
+	margin-right 30px
+	font-size 10px
+	line-height 16px
+.global-footer .gf-footer-legal-links
+	a
+		display inline-block
+		position relative
+		top 1px
+		font-size 10px
+		line-height 16px
+		color #555
+		&:not(:last-child)
+			margin-right 10px
+			padding-right 12px
+			border-right 1px solid #d6d6d6
+@media only screen and (max-width: 1044px)
+	.global-footer
+		min-width 320px
+	.global-footer .gf-directory
+		padding-top 21px
+@media only screen and (max-width: 767px)
+	.global-footer .gf-directory
+		padding-top 1px
 		> div
-			box-sizing border-box
-			position relative
-			z-index 1
-			margin 0
-			padding 0
-			float left
-			min-height 2px
-			width 20%
-			line-height 1.27273
-			> label
-				> h3
-					font-size 12px
-					margin 0
-					margin-bottom 6px
-					font-weight 600
-			> ul
-				padding 0
-				margin 0
-				margin-right 20px
-				list-style none
-				> li
+			width 100%
+	.global-footer .gf-directory-column
+		border-bottom 1px solid #d6d6d6
+		overflow hidden
+		label
+			h3
+				position relative
+				margin-bottom 0
+				padding 10px 0
+				font-size 12px
+				line-height 18px
+				background-color #f2f2f2
+				cursor pointer
+				color #000
+				z-index 2
+				font-weight 400
+				&:after
+					content '+'
 					display block
-					&:not(:last-child)
-						margin-bottom 6px
-					> a
-						color #555
-						text-decoration none
-						&:hover
-							text-decoration underline
+					position absolute
+					top 12px
+					right 4px
+					width 14px
+					height 14px
+					font-size 14px
+					line-height 14px
+					text-align center
+					transition transform .3s ease, -webkit-transform .3s ease
+		~ .gf-directory-column
+			padding-top 0
+	.global-footer .gf-directory-list
+		position absolute
+		top 100%
+		left 0
+		width 100%
+		visibility hidden
+		margin-right 0
+		padding-top 5px
+		padding-bottom 16px
+		overflow hidden
+		z-index -1
+		transform translateY(-100px)
+		transition transform .3s ease, -webkit-transform .3s ease
+		li
+			&:not(:last-child)
+				margin-bottom 0
+			a
+				display block
+				padding 6px 14px
+	.global-footer .gf-footer
+		padding-top 17px
+	.global-footer .gf-footer-shop
+		border-bottom none
+	.global-footer .gf-footer-locale
+		float none
+	.global-footer .gf-footer-legal
+		padding-top 12px
+		padding-bottom 6px
+		div
+			float none
+	.global-footer .gf-footer-legal-copyright
+		margin-right 0
+		padding-bottom 3px
+	.global-footer .gf-directory > div input[type = 'checkbox']:checked + .gf-directory-column
+		label
+			h3
+				&:after
+					transform rotate(45deg) scale(1.08)
+		.gf-directory-list
+			position static
+			visibility visible
+			z-index 1
+			transform none

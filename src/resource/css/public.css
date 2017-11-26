@@ -1,3 +1,30 @@
+html {
+  font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 10px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.global-nav *,
+.global-footer * {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  pointer-events: auto;
+  letter-spacing: normal;
+}
+.global-nav *,
+.global-footer * {
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: inherit;
+}
 .global-footer {
   position: relative;
   min-width: 1024px;
@@ -132,102 +159,4 @@
   margin-right: 10px;
   padding-right: 12px;
   border-right: 1px solid #d6d6d6;
-}
-@media only screen and (max-width: 1044px) {
-  .global-footer {
-    min-width: 320px;
-  }
-  .global-footer .gf-directory {
-    padding-top: 21px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .global-footer .gf-directory {
-    padding-top: 1px;
-  }
-  .global-footer .gf-directory > div {
-    width: 100%;
-  }
-  .global-footer .gf-directory-column {
-    border-bottom: 1px solid #d6d6d6;
-    overflow: hidden;
-  }
-  .global-footer .gf-directory-column label h3 {
-    position: relative;
-    margin-bottom: 0;
-    padding: 10px 0;
-    font-size: 12px;
-    line-height: 18px;
-    background-color: #f2f2f2;
-    cursor: pointer;
-    color: #000;
-    z-index: 2;
-    font-weight: 400;
-  }
-  .global-footer .gf-directory-column label h3:after {
-    content: '+';
-    display: block;
-    position: absolute;
-    top: 12px;
-    right: 4px;
-    width: 14px;
-    height: 14px;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  }
-  .global-footer .gf-directory-column ~ .gf-directory-column {
-    padding-top: 0;
-  }
-  .global-footer .gf-directory-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    visibility: hidden;
-    margin-right: 0;
-    padding-top: 5px;
-    padding-bottom: 16px;
-    overflow: hidden;
-    z-index: -1;
-    transform: translateY(-100px);
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  }
-  .global-footer .gf-directory-list li:not(:last-child) {
-    margin-bottom: 0;
-  }
-  .global-footer .gf-directory-list li a {
-    display: block;
-    padding: 6px 14px;
-  }
-  .global-footer .gf-footer {
-    padding-top: 17px;
-  }
-  .global-footer .gf-footer-shop {
-    border-bottom: none;
-  }
-  .global-footer .gf-footer-locale {
-    float: none;
-  }
-  .global-footer .gf-footer-legal {
-    padding-top: 12px;
-    padding-bottom: 6px;
-  }
-  .global-footer .gf-footer-legal div {
-    float: none;
-  }
-  .global-footer .gf-footer-legal-copyright {
-    margin-right: 0;
-    padding-bottom: 3px;
-  }
-  .global-footer .gf-directory > div input[type = 'checkbox']:checked + .gf-directory-column label h3:after {
-    transform: rotate(45deg) scale(1.08);
-  }
-  .global-footer .gf-directory > div input[type = 'checkbox']:checked + .gf-directory-column .gf-directory-list {
-    position: static;
-    visibility: visible;
-    z-index: 1;
-    transform: none;
-  }
 }

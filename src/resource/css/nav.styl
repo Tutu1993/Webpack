@@ -1,197 +1,181 @@
-#nav-icon
+#gn-menustate
 	display none
-nav.public-nav
+.global-nav
+	display block
 	position fixed
 	top 0
 	right 0
 	left 0
-	z-index 9999
-	display block
-	margin 0
 	width 100%
-	min-width 1024px
+	min-width 1024px;
 	height 48px
 	max-height 44px
-	background #333
+	font-size 0
 	background rgba(0,0,0,0.8)
-	font-size 14px
+	z-index 9999
 	user-select none
-	> div
-		margin: 0 auto
-		max-width: 980px
-		padding: 0 22px
-		position: relative
-		z-index: 2
-		overflow hidden
-		ul
-			list-style none
-			padding 0
-			width auto
-			position relative
-			li
-				display inline-block
-				position relative
-				z-index 1
-				vertical-align top
-				a
-					text-decoration none
-					display inline-block
-					font-size 14px
-					color #fff
-					padding 0 10px
-					transition opacity .25s
-					&:hover
-						opacity .65
-				a.logo
-						width 24px
-						background url('../imgs/logo-white.png') center center no-repeat
-						background-size 24px 24px
-ul.nav-header
+.global-nav .gn-content
+	position relative
+	max-width 980px
+	margin 0 auto
+	padding 0 22px
+	overflow hidden
+.global-nav .gn-header
 	display none
-	margin 0 -22px
+	position absolute
+	width 100%
 	height 48px
-	text-align center
+	top 0
+	left 0
 	li
-		height 48px
-		a
-			height 48px
-			line-height 48px
-	li.icon
-		display block
-		width 48px
 		position absolute
-		top 0
-		left 0
-		z-index 3
-		label
-			cursor pointer
-			display block
+		height 48px
+		&:last-child
+			top 0
+			left calc(50% - 20px)
+			a
+				display inline-block
+				height 48px
+				line-height 48px
+				padding 0 10px
+.global-nav .gn-menuicon
+	position absolute
+	top 0
+	left 0
+	width 48px
+	label
+		display block
+		position absolute
+		width 48px
+		height 48px
+		cursor pointer
+		transform rotate(0)
+		transition transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99)
+		> span
+			position absolute
+			top 0
+			left 0
 			width 48px
 			height 48px
-			position absolute
-			transition transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99)
+			transition transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99)
 			> span
+				display block
 				position absolute
-				width 48px
-				height 48px
-				top 0
-				left 0
-				transition transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99)
+				left 16px
+				width 17px
+				height 1px
+				background #fff
+				transition transform 0.2s 0.2s, -webkit-transform 0.2s 0.2s
+			&:first-child
 				> span
-					display block
-					width 17px
-					height 1px
-					background #fff
-					position absolute
-					left 16px
-					font-size 0
-					transition transform 0.2s 0.2s, -webkit-transform 0.2s 0.2s
-				&:first-child
-					> span
-						top 23px
-						transform translateY(-3px)
-				&:last-child
-					> span
-						bottom 23px
-						transform translateY(3px)
-ul.nav-list
-	margin 0 -10px
+					top 23px
+					transform rotate(0)
+					transform translateY(-3px)
+			&:last-child
+				> span
+					bottom 23px
+					transform rotate(0)
+					transform translateY(3px)
+.global-nav .gn-list
+	width auto
 	height 44px
+	margin 0 -10px
 	text-align justify
-	position relative
 	&:after
 		content ''
 		display inline-block
 		width 100%
 		font-size 0
-		ling-height 0
-	li
+		line-height 0
+.global-nav .gn-item
+	display inline-block
+	position relative
+	height 44px
+	vertical-align top
+	a
+		display inline-block
 		height 44px
-		a
-			height 44px
-			line-height 44px
+		line-height 44px
+		padding 0 10px
+		font-size 1.3rem
+		color #fff
+		opacity 1
+		transition opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1)
+		&:hover
+			opacity .65
+.global-nav .gn-logo
+	width 20px
+	background url('../imgs/logo-white.png') center center no-repeat
+	background-size 20px 20px
 @media only screen and (max-width: 1044px)
-	nav.public-nav
+	.global-nav
 		min-width 320px
 @media only screen and (max-width: 767px)
-	nav.public-nav
+	.global-nav
 		max-height none
-		transition background 0.35s linear,height 0.35s ease-in 200ms
-		> div
-			padding 0
-			width 100%
-			height 100%
-			top 0
-			position absolute
-		ul.nav-header
+		transition background 0.35s linear,height 0.35s ease-in .2s
+	.global-nav .gn-content
+		position absolute
+		top 0
+		width 100%
+		height 100%
+		padding 0
+	.global-nav .gn-header
+		display block
+	.global-nav .gn-list
+		position absolute
+		top 48px
+		right 0
+		bottom 0
+		left 0
+		height auto
+		margin 0
+		padding 0 48px
+		overflow hidden
+		transition visibility 0s linear 1s
+		visibility hidden
+	.global-nav .gn-item
+		width 100%
+		height 43px
+		border-bottom 1px solid #333
+		opacity 0
+		transform scale(1.1) translateY(-24px)
+		transition opacity 0.35s ease-out, transform 0.35s ease-out, -webkit-transform 0.35s ease-out
+		a
 			display block
-			margin 0
-			li.icon
-				label
-					transform rotate(0)
-					> span:first-child
-						transform rotate(0)
-					> span:last-child
-						transform rotate(0)
-		ul.nav-list
-			position absolute
-			top 48px
-			right 0
-			bottom 0
-			left 0
-			margin 0
-			padding 0 48px
-			height auto
-			overflow hidden
-			box-sizing border-box
-			transition visibility 0s linear 1s
-			visibility hidden
-			li
-				display block
-				height 43px
-				border-bottom 1px solid #333
-				opacity 0
-				transform scale(1.1) translateY(-24px)
-				transition opacity 0.35s ease-out, transform 0.35s ease-out, -webkit-transform 0.35s ease-out
-				a
-					display block
-					width auto
-					max-width none
-					padding 0
-					font-size 17px
-			li:first-child
+			width auto
+			max-width none
+			padding 0
+			font-size 1.7rem
+		&:nth-child(1)
 				display none
-			li:nth-child(2)
-				margin-top 20px
-				transition-delay 300ms,300ms
-			li:nth-child(3)
-				transition-delay 350ms,350ms
-			li:nth-child(4)
-				transition-delay 400ms,400ms
-			li:nth-child(5)
-				transition-delay 450ms,450ms
-			li:nth-child(6)
-				transition-delay 500ms,500ms
-			li:nth-child(7)
-				transition-delay 550ms,550ms
-	#nav-icon:checked ~ nav.public-nav
+		&:nth-child(2)
+			margin-top 20px
+			transition-delay .35s, .35s
+		&:nth-child(3)
+			transition-delay .4s, .4s
+		&:nth-child(4)
+			transition-delay .45s, .45s
+		&:nth-child(5)
+			transition-delay .5s, .5s
+		&:nth-child(6)
+			transition-delay .55s, .55s
+	#gn-menustate:checked ~ .global-nav
 		height 100%
 		background #000
-		max-height none
-		ul.nav-header
-			li.icon
-				label
-					transform rotate(90deg)
+		.gn-menuicon
+			label
+				transform rotate(90deg)
+				> span
 					> span
-						> span
-							transform translateY(0)
-					> span:first-child
+						transform translateY(0)
+					&:first-child
 						transform rotate(45deg)
-					> span:last-child
+					&:last-child
 						transform rotate(-45deg)
-		ul.nav-list
+		.gn-list
 			visibility visible
 			transition-delay 0s
-			li
-				opacity 1
-				transform none
+		.gn-item
+			opacity 1
+			transform none
