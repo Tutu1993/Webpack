@@ -22,9 +22,19 @@ const reducerCopy = (state = 5, action) => {
 	}
 };
 
+const changeState = (state = false, action) => {
+	switch (action.type) {
+		case 'CHANGE_STATE':
+			return !state;
+		default:
+			return state;
+	}
+};
+
 const reducerCombine = combineReducers({
 	reducer,
-	reducerCopy
+	reducerCopy,
+	changeState
 });
 
 
