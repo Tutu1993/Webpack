@@ -21,9 +21,7 @@ pluginsConfig.push(new webpack.DefinePlugin({
 	}
 }));
 
-pluginsConfig.push(new UglifyJSPlugin({
-	// sourceMap: true
-}));
+pluginsConfig.push(new UglifyJSPlugin());
 
 pluginsConfig.push(new webpack.HashedModuleIdsPlugin());
 
