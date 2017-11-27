@@ -93,7 +93,7 @@
   padding-top: 3px;
 }
 .global-footer .gf-footer-locale a {
-  display: block;
+  display: inline-block;
   height: 16px;
   padding-left: 20px;
   background: url("../imgs/logo-red.png") left center no-repeat;
@@ -142,6 +142,9 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  .global-footer .gf-content {
+    padding: 0 16px;
+  }
   .global-footer .gf-directory {
     padding-top: 1px;
   }
