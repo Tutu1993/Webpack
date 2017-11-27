@@ -6,6 +6,6 @@
 
 {{block 'content'}}
 	<div style="height: 200px;background: pink;"></div>
-	<h1>Hello World!</h1>
+	<div id="root"></div>
 	<div style="height: 200px;background: pink;"></div>
 {{/block}}
