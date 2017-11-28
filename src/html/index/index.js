@@ -4,6 +4,7 @@ require('cssDir/nav.css');
 require('cssDir/footer.css');
 
 import { createStore, applyMiddleware } from 'redux';
+import { connect, Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import reducer from './reducer.js';
 import Counter from './Counter.js';
@@ -25,46 +26,42 @@ class App extends React.Component {
 		return (
 			<div>
 				<Counter
-					value={store.getState().reducer}
-					onAdd={() => store.dispatch(actionStart())}
-					onDel={() => store.dispatch({type: 'DECREMENT'})}
+					value={this.props.reducer}
+					onAdd={this.props.increment}
+					onDel={this.props.decrement}
 				/>
 				<Counter
-					value={store.getState().reducerCopy}
-					onAdd={() => store.dispatch({type: 'INCREMENTCOPY'})}
-					onDel={() => store.dispatch({type: 'DECREMENTCOPY'})}
+					value={this.props.reducerCopy}
+					onAdd={this.props.incrementCopy}
+					onDel={this.props.decrementCopy}
 				/>
 			</div>
 		);
 	}
 }
 
-const render = () => {
-	ReactDOM.render(
-		<App />,
-		document.querySelector('#root')
-	);
+const mapStateToProps = state => {
+	return {
+		reducer: state.reducer,
+		reducerCopy: state.reducerCopy
+	};
 };
+const mapDispatchToProps = dispatch => {
+	return {
+		increment: () => store.dispatch({type: 'INCREMENT'}),
+		decrement: () => store.dispatch({type: 'DECREMENT'}),
+		incrementCopy: () => store.dispatch({type: 'INCREMENTCOPY'}),
+		decrementCopy: () => store.dispatch({type: 'DECREMENTCOPY'})
+	};
+};
+const AppDom = connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(App);
 
-render();
-store.subscribe(render);
-fetch('./apple.json')
-	.then(
-		function(response) {
-			if (response.status !== 200) {
-				console.log('Looks like there was a problem. Status Code: ' +
-			response.status);
-			return;
-		}
-
-		// Examine the text in the response
-		response.json().then(function(data) {
-		  	const div = document.createElement('div');
-
-			div.innerHTML = data.apple;
-        	document.querySelector('body').appendChild(div);
-		});
-	})
-	.catch(function(err) {
-		console.log('Fetch Error :-S', err);
-	});
+ReactDOM.render(
+	<Provider store={store}>
+    	<AppDom />
+  	</Provider>,
+	document.querySelector('#root')
+);
