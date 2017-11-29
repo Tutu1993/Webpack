@@ -124,7 +124,7 @@
 }
 .global-nav .gn-logo {
   width: 20px;
-  background: url("../imgs/logo-white.png") center center no-repeat;
+  background: url("../../imgs/logo-white.png") center center no-repeat;
   background-size: 20px 20px;
 }
 @media only screen and (max-width: 1044px) {

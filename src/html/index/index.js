@@ -1,7 +1,7 @@
-require('cssDir/normalize.css');
-require('cssDir/public.css');
-require('cssDir/nav.css');
-require('cssDir/footer.css');
+require('cssDir/global/normalize.css');
+require('cssDir/global/public.css');
+require('cssDir/global/nav.css');
+require('cssDir/global/footer.css');
 
 import { createStore, applyMiddleware } from 'redux';
 import { connect, Provider } from 'react-redux';

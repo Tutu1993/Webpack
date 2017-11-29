@@ -6,11 +6,11 @@
 
 {{block 'content'}}
 	<main class="main">
-		<section>
-			<div>
+		<section class="section-header text-center">
+			<div class="section-content">
 				<h1>隐私政策</h1>
 				<h3>隐私政策已于 2017 年 11 月 23日更新。</h3>
-				<p>我们非常重视您的隐私。因此我们制定了涵盖如何收集、使用、披露、转让以及存储您的信息的隐私政策。请您花些时间熟悉我们针对客户隐私的做法，如有任何疑问，请<a href="">联系我们</a>。</p>
+				<p class="width-2-3">我们非常重视您的隐私。因此我们制定了涵盖如何收集、使用、披露、转让以及存储您的信息的隐私政策。请您花些时间熟悉我们针对客户隐私的做法，如有任何疑问，请<a href="">联系我们</a>。</p>
 			</div>
 		</section>
 	</main>
