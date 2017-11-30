@@ -2,35 +2,112 @@ h1, h2, h3, h4, h5, h6
 	margin 0 0 .45em 0
 p
 	margin 0 0 1em 0
-.text-center
-	text-align center
-.width-2-3
-	width 66.66667%
+p + h2, ul + h2, p + h3, ul + h3
+	margin-top 1.4em
+.center
 	margin-left auto
 	margin-right auto
+.top-border
+	padding-top 50px
+	padding-bottom 75px
+	border-top 1px solid #d6d6d6
+	width 83.33333%
 // start
-.main a
-	&:hover
-		text-decoration underline
-.main .section-header
-	padding 75px 0 22px
-.main .section-content
-	width 980px
-	margin 0 auto
+.main
+	min-width 1024px
+	padding-top 44px
 	position relative
-	z-index 1
+	font-size 0
+	a
+		&:hover
+			text-decoration underline
+.section-header
+	padding 75px 0 22px
+	text-align center
 	h1
 		font-size 4.8rem
 		line-height 50px
 		font-weight 500
 		letter-spacing .006em
-	h3
-		font-size 3.2rem
-		line-height 35px
-		font-weight 500
-		letter-spacing .011em
 	p
 		font-size 2.2rem
 		line-height 32px
 		font-weight 300
 		letter-spacing .016em
+		width 66.66667%
+.section-content
+	width 980px
+	margin 0 auto
+	position relative
+	z-index 1
+	font-size 1.7rem
+	line-height 26px
+	font-weight 400
+	letter-spacing -.021em
+	h2
+		font-size 4rem
+		line-height 42px
+		font-weight 300
+		letter-spacing .008em
+	h3
+		font-size 3.2rem
+		line-height 35px
+		font-weight 500
+		letter-spacing .011em
+	ul
+		list-style-type square
+		margin 1em 0 1em 1.11111em
+		padding 0
+	li:not(:last-child)
+		margin-bottom 5px
+// media
+@media only screen and (max-width: 1044px)
+	.main
+		min-width 320px
+	.section-header
+		h1
+			font-size 4rem
+			line-height 42px
+			letter-spacing .008em
+		p
+			font-size 2rem
+			line-height 30px
+			letter-spacing .017em
+			width 83.33333%
+	.section-content
+		width 692px
+		h2
+			font-size 3.4rem
+			line-height 37px
+			letter-spacing .01em
+		h3
+			font-size 2.8rem
+			line-height 31px
+			letter-spacing .012em
+@media only screen and (max-width: 767px)
+	.main
+		padding-top 48px
+	.top-border
+		width 100%
+	.section-header
+		padding 65px 0 20px
+		text-align left
+		h1
+			font-size 3.1rem
+			line-height 34px
+			letter-spacing .011em
+		p
+			font-size 1.9rem
+			line-height 28px
+			letter-spacing .018em
+			width 100%
+	.section-content
+		width 87.5%
+		h2
+			font-size 2.8rem
+			line-height 31px
+			letter-spacing .012em
+		h3
+			font-size 2.4rem
+			line-height 29px
+			letter-spacing .015em
