@@ -10,6 +10,12 @@ a {
   text-decoration: none;
   color: #0070c9;
 }
+.clear:after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+}
 .global-nav *,
 .global-footer * {
   box-sizing: content-box;
@@ -25,4 +31,20 @@ a {
   font-weight: inherit;
   line-height: inherit;
   text-align: inherit;
+}
+.main {
+  min-width: 1024px;
+  padding-top: 44px;
+  position: relative;
+  font-size: 0;
+}
+@media only screen and (max-width: 1044px) {
+  .main {
+    min-width: 320px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main {
+    padding-top: 48px;
+  }
 }

@@ -1,0 +1,121 @@
+.main {
+  background-color: #f2f2f2;
+}
+.contact {
+  width: 880px;
+  margin: 75px auto 0;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+}
+.contact h1 {
+  font-size: 2.4rem;
+  line-height: 36px;
+  font-weight: 500;
+  margin: 0 0 1.5em;
+}
+.contact p {
+  font-size: 1.6rem;
+  line-height: 24px;
+  font-weight: 300;
+  padding-bottom: 1.5em;
+  margin: 0;
+  color: #666;
+  border-bottom: 1px solid #d4d4d4;
+}
+.form {
+  padding: 25px;
+}
+.form-line {
+  font-size: 1.4rem;
+  line-height: 24px;
+}
+.form-line:not(:last-child) {
+  margin-bottom: 12px;
+}
+.form-line > * {
+  float: left;
+}
+.form-line > span {
+  display: block;
+  width: 100px;
+  padding-right: 15px;
+}
+.form-line input[type = 'text'] {
+  box-sizing: border-box;
+  display: block;
+  width: 600px;
+  padding: 1px 10px;
+  line-height: 20px;
+}
+.form-line input[type = 'radio'] {
+  display: none;
+}
+.form-line textarea {
+  width: 600px;
+  height: 44px;
+  box-sizing: border-box;
+  margin-left: 115px;
+}
+.form-line input[type = 'button'] {
+  border: none;
+  width: 128px;
+  height: 35px;
+  background-color: #337ab7;
+  border-radius: 7px;
+  color: #fff;
+  margin-left: 587px;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  line-height: 32px;
+}
+.form-line input[type = 'text'],
+.form-line textarea,
+.form-line select {
+  border: 1px solid #e5e5e5;
+}
+.selector {
+  width: 600px;
+  margin-bottom: 10px;
+}
+.selector select {
+  width: 190px;
+}
+.selector select:not(:last-child) {
+  margin-right: 15px;
+}
+.form-sex label {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+.form-sex label:before {
+  content: '';
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #337ab7;
+}
+.form-sex input:checked + label:after {
+  content: '';
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #337ab7;
+  top: 8px;
+  left: 16px;
+}
+@media only screen and (max-width: 1044px) {
+  .contact {
+    width: calc(100% - 100px);
+  }
+}

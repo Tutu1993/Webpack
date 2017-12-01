@@ -1,4 +1,4 @@
-{{extend '../../resource/component/layout.art'}}
+{{extend '../../resource/layout/layout.art'}}
 
 {{block 'meta'}}{{/block}}
 

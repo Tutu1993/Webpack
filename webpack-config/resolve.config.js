@@ -1,10 +1,11 @@
 const dirVars = require('./base/dirVars.config.js');
 const moduleExports = {
 	alias: {
-		jsDir: dirVars.jsDir,
+		componentDir: dirVars.componentDir,
 		cssDir: dirVars.cssDir,
 		imgsDir: dirVars.imgsDir,
-		componentDir: dirVars.componentDir
+		jsDir: dirVars.jsDir,
+		jsonDir: dirVars.jsonDir
 	}
 };
 

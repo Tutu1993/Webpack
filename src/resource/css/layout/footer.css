@@ -29,12 +29,6 @@
 .global-footer .gf-directory > div input[type = 'checkbox'] {
   display: none;
 }
-.global-footer .gf-directory:after {
-  content: '';
-  clear: both;
-  display: block;
-  height: 0;
-}
 .global-footer .gf-directory-column {
   position: relative;
   width: 100%;
@@ -108,12 +102,6 @@
 }
 .global-footer .gf-footer-legal div {
   float: left;
-}
-.global-footer .gf-footer-legal:after {
-  content: '';
-  clear: both;
-  display: block;
-  height: 0;
 }
 .global-footer .gf-footer-legal-copyright {
   margin-right: 30px;

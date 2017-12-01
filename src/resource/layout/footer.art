@@ -1,6 +1,6 @@
 <footer class="global-footer">
 	<div class="gf-content">
-		<nav class="gf-directory">
+		<nav class="gf-directory clear">
 			<div>
 				<input type="checkbox" id="gn-products-state"/>
 				<div class="gf-directory-column">
@@ -111,7 +111,7 @@
 			<div class="gf-footer-locale">
 				<a href="">中国</a>
 			</div>
-			<div class="gf-footer-legal">
+			<div class="gf-footer-legal clear">
 				<div class="gf-footer-legal-copyright">Copyright © 2017 Apple Inc. 保留所有权利。</div>
 				<div class="gf-footer-legal-links">
 					<a href="/legal/privacy">隐私政策</a>
