@@ -8,7 +8,6 @@
 	<main class="main">
 		<div class="contact">
 			<h1>联系我们</h1>
-			<p>如果你对我们的私隐政策或其他方面有任何问题，我们希望收到你的反馈。</p>
 			<form class="form">
 				<div class="form-line clear">
 					<span>姓名</span>
@@ -32,8 +31,6 @@
 				<div class="form-line clear">
 					<span>您开设无人便利店的地点</span>
 					<div id="city-selector" class="selector"></div><br>
-				</div>
-				<div class="form-line clear">
 					<textarea name="address" placeholder="请填写具体地址"></textarea>
 				</div>
 				<div class="form-line clear">
