@@ -8,7 +8,7 @@
 	<main class="main">
 		<div class="contact">
 			<h1>联系我们</h1>
-			<form class="form">
+			<form class="form" id="form-contact">
 				<div class="form-line clear">
 					<span>姓名</span>
 					<input type="text" name="name">
@@ -34,7 +34,7 @@
 					<textarea name="address" placeholder="请填写具体地址"></textarea>
 				</div>
 				<div class="form-line clear">
-					<input type="button" name="submit" value="提交">
+					<input type="button" name="submit" value="提交" id="form-submit">
 				</div>
 			</form>
 		</div>
