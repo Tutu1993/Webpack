@@ -2,7 +2,7 @@ import {
   BrowserRouter as Router,
   Route,
   Link,
-  Switch
+  Switch,
 } from 'react-router-dom'
 
 const Home = () => (

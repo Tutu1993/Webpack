@@ -13,5 +13,5 @@ module.exports = {
 	module: moduleConfig,
 	plugins: pluginsConfig,
 	resolve: resolveConfig,
-	// devtool: 'source-map'
+	// devtool: 'source-map',
 }

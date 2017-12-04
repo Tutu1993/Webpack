@@ -5,8 +5,8 @@ const entryConfig = {}
 
 entryConfig.vendor = ['prop-types', 'react', 'react-dom', 'react-redux', 'redux', 'redux-thunk']
 
-entryArr.forEach(entry => {
+entryArr.forEach(entry =>
 	entryConfig[entry] = path.resolve(dirVars.htmlDir, `${entry}/index.js`)
-})
+)
 
 module.exports = entryConfig

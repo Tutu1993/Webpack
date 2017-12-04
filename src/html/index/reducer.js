@@ -34,7 +34,7 @@ const changeState = (state = false, action) => {
 const reducerCombine = combineReducers({
 	reducer,
 	reducerCopy,
-	changeState
+	changeState,
 })
 
 export default reducerCombine

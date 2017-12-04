@@ -5,8 +5,8 @@ const moduleExports = {
 		cssDir: dirVars.cssDir,
 		imgsDir: dirVars.imgsDir,
 		jsDir: dirVars.jsDir,
-		jsonDir: dirVars.jsonDir
-	}
+		jsonDir: dirVars.jsonDir,
+	},
 }
 
 module.exports = moduleExports

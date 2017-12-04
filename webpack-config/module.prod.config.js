@@ -8,11 +8,11 @@ moduleConfig.rules.push({
 		loader: 'babel-loader',
 		options: {
 			presets: ["env", "react"],
-			plugins: ["transform-runtime"]
-		}
+			plugins: ["transform-runtime"],
+		},
 	},
 	include: dirVars.srcDir,
-	exclude: /node_modules/
+	exclude: /node_modules/,
 })
 
 moduleConfig.rules.push({
@@ -23,16 +23,16 @@ moduleConfig.rules.push({
 			{
 				loader: "css-loader",
 				options: {
-					minimize: true
-				}
+					minimize: true,
+				},
 			},
 			{
-				loader: "postcss-loader"
-			}
-		]
+				loader: "postcss-loader",
+			},
+		],
 	}),
 	include: dirVars.srcDir,
-	exclude: /node_modules/
+	exclude: /node_modules/,
 })
 
 module.exports = moduleConfig

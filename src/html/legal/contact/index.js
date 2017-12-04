@@ -16,7 +16,7 @@ function fetchDemo() {
 
     fetch('/interface/post.php', {
         method: 'POST',
-        body: form
+        body: form,
     })
         .then(
             function(response) {

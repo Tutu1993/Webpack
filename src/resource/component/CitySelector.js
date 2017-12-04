@@ -6,7 +6,7 @@ class CitySelector extends React.Component {
 		this.state = {
 			province: '',
 			city: '',
-			area: ''
+			area: '',
 		}
 		this.handleProvinceChange = this.handleProvinceChange.bind(this)
 		this.handleCityChange = this.handleCityChange.bind(this)
@@ -16,18 +16,18 @@ class CitySelector extends React.Component {
 		this.setState({
 			province: event.target.value,
 			city: '',
-			area: ''
+			area: '',
 		})
 	}
 	handleCityChange(event) {
 		this.setState({
 			city: event.target.value,
-			area: ''
+			area: '',
 		})
 	}
 	handleAreaChange(event) {
 		this.setState({
-			area: event.target.value
+			area: event.target.value,
 		})
 	}
 	render() {
@@ -35,7 +35,7 @@ class CitySelector extends React.Component {
 		const city = require('jsonDir/city.json')
 		const area = require('jsonDir/area.json')
 		const provinceList = province.map((value, index) =>
-			<option value={value.name} key={index}>{value.name}</option>
+			<option value={ value.name } key={ index }>{ value.name }</option>
 		)
 		let proID = ''
 		province.map(value => {
@@ -46,7 +46,7 @@ class CitySelector extends React.Component {
 		const cityList = proID ?
 			city.filter(value => value.ProID === proID)
 				.map((value, index) =>
-					<option value={value.name} key={index}>{value.name}</option>
+					<option value={ value.name } key={ index }>{ value.name }</option>
 				)
 			: []
 		let cityID = ''
@@ -58,7 +58,7 @@ class CitySelector extends React.Component {
 		const areaList = cityID ?
 			area.filter(value => value.CityID === cityID)
 				.map((value, index) =>
-					<option value={value.DisName} key={index}>{value.DisName}</option>
+					<option value={ value.DisName } key={ index }>{ value.DisName }</option>
 				)
 			: []
 		return (

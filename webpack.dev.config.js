@@ -15,5 +15,5 @@ module.exports = {
 	plugins: pluginsConfig,
 	resolve: resolveConfig,
 	devServer: devServerConfig,
-	devtool: 'inline-source-map'
+	devtool: 'inline-source-map',
 }

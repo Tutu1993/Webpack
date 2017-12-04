@@ -5,21 +5,21 @@ const moduleConfig = {
 			test: /\.html$/,
 			use: [
 				{
-					loader: "html-loader"
-				}
+					loader: "html-loader",
+				},
 			],
 			include: dirVars.srcDir,
-			exclude: /node_modules/
+			exclude: /node_modules/,
 		},
 		{
 			test: /\.art$/,
 			use: [
 				{
-					loader: "art-template-loader"
-				}
+					loader: "art-template-loader",
+				},
 			],
 			include: dirVars.srcDir,
-			exclude: /node_modules/
+			exclude: /node_modules/,
 		},
 		{
 			test: /\.(png|jpg|gif)$/,
@@ -28,11 +28,11 @@ const moduleConfig = {
 				options: {
 					limit: 8192,
 					name: 'static/imgs/[hash:8].[ext]',
-					path: dirVars.distDir
-				}
+					path: dirVars.distDir,
+				},
 			},
 			include: dirVars.srcDir,
-			exclude: /node_modules/
+			exclude: /node_modules/,
 		},
 		{
 			test: /\.(woff|woff2|svg|eot|ttf)$/,
@@ -40,14 +40,13 @@ const moduleConfig = {
 				loader: "file-loader",
 				options: {
 					name: 'static/fonts/[name].[hash:8].[ext]',
-					path: dirVars.distDir
-				}
+					path: dirVars.distDir,
+				},
 			},
 			include: dirVars.srcDir,
-			exclude: /node_modules/
-		}
-	]
+			exclude: /node_modules/,
+		},
+	],
 }
-
 
 module.exports = moduleConfig

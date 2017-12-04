@@ -8,9 +8,9 @@ const devServerConfig = {
 		'/interface/*': {
 			target: 'http://localhost:80',
 			changeOrigin: true,
-			secure: false
-		}
-	}
+			secure: false,
+		},
+	},
 }
 
 module.exports = devServerConfig

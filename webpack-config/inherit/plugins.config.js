@@ -9,23 +9,24 @@ const pluginsConfig = [
 	new webpack.ProvidePlugin({
 		React: 'react',
 		ReactDOM: 'react-dom',
-		PropTypes: 'prop-types'
-	})
+		PropTypes: 'prop-types',
+	}),
 ]
 
 entryArr.forEach(entry => {
 	const htmlPlugin = new HtmlWebpackPlugin({
 		filename: `${entry}/index.html`,
 		template: path.resolve(dirVars.htmlDir, `${entry}/index.art`),
-		chunks: ['runtime','vendor', entry]
+		chunks: ['runtime','vendor', entry],
 	})
+
 	pluginsConfig.push(htmlPlugin)
 })
 
 pluginsConfig.push(new HtmlWebpackPlugin({
 	filename: 'index.html',
 	template: path.resolve(dirVars.htmlDir, 'index/index.art'),
-	chunks: ['runtime', 'vendor', 'index']
+	chunks: ['runtime', 'vendor', 'index'],
 }))
 
 module.exports = pluginsConfig

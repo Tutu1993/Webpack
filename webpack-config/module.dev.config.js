@@ -12,13 +12,13 @@ moduleConfig.rules.push({
 			plugins: ["transform-runtime"],
 			env: {
 				development: {
-					presets: ["react-hmre"]
-				}
-			}
-		}
+					presets: ["react-hmre"],
+				},
+			},
+		},
 	},
 	include: dirVars.srcDir,
-	exclude: /node_modules/
+	exclude: /node_modules/,
 })
 
 moduleConfig.rules.push({
@@ -30,12 +30,12 @@ moduleConfig.rules.push({
 				loader: "css-loader",
 			},
 			{
-				loader: "postcss-loader"
-			}
-		]
+				loader: "postcss-loader",
+			},
+		],
 	}),
 	include: dirVars.srcDir,
-	exclude: /node_modules/
+	exclude: /node_modules/,
 })
 
 module.exports = moduleConfig
