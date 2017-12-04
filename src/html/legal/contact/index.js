@@ -1,4 +1,3 @@
-require('jsDir/global.js')
 require('cssDir/legal/contact.css')
 
 import CitySelector from 'componentDir/CitySelector.js'

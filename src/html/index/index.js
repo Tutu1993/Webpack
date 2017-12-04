@@ -1,5 +1,3 @@
-require('jsDir/global.js')
-
 import { createStore, applyMiddleware } from 'redux'
 import { connect, Provider } from 'react-redux'
 import thunk from 'redux-thunk'
