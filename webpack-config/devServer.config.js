@@ -11,5 +11,6 @@ const devServerConfig = {
 			secure: false
 		}
 	}
-};
-module.exports = devServerConfig;
+}
+
+module.exports = devServerConfig

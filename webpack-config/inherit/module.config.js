@@ -1,4 +1,4 @@
-const dirVars = require('../base/dirVars.config.js');
+const dirVars = require('../base/dirVars.config.js')
 const moduleConfig = {
 	rules: [
 		{
@@ -47,7 +47,7 @@ const moduleConfig = {
 			exclude: /node_modules/
 		}
 	]
-};
+}
 
 
-module.exports = moduleConfig;
+module.exports = moduleConfig

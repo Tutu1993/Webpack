@@ -1,4 +1,4 @@
-const dirVars = require('./base/dirVars.config.js');
+const dirVars = require('./base/dirVars.config.js')
 const moduleExports = {
 	alias: {
 		componentDir: dirVars.componentDir,
@@ -7,6 +7,6 @@ const moduleExports = {
 		jsDir: dirVars.jsDir,
 		jsonDir: dirVars.jsonDir
 	}
-};
+}
 
-module.exports = moduleExports;
+module.exports = moduleExports

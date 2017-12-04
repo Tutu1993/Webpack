@@ -1,25 +1,25 @@
-require('cssDir/global/normalize.css');
-require('cssDir/global/public.css');
-require('cssDir/layout/nav.css');
-require('cssDir/layout/footer.css');
+require('cssDir/global/normalize.css')
+require('cssDir/global/public.css')
+require('cssDir/layout/nav.css')
+require('cssDir/layout/footer.css')
 
-// import { createStore, applyMiddleware } from 'redux';
-// import { connect, Provider } from 'react-redux';
-// import thunk from 'redux-thunk';
-// import reducer from './reducer.js';
-// import Counter from './Counter.js';
+// import { createStore, applyMiddleware } from 'redux'
+// import { connect, Provider } from 'react-redux'
+// import thunk from 'redux-thunk'
+// import reducer from './reducer.js'
+// import Counter from './Counter.js'
 //
-// const middlewares = [];
+// const middlewares = []
 //
-// middlewares.push(thunk);
+// middlewares.push(thunk)
 //
 // if (process.env.NODE_ENV === `development`) {
-//   const { logger } = require(`redux-logger`);
+//   const { logger } = require(`redux-logger`)
 //
-//   middlewares.push(logger);
+//   middlewares.push(logger)
 // }
 //
-// const store = createStore(reducer, applyMiddleware(...middlewares));
+// const store = createStore(reducer, applyMiddleware(...middlewares))
 //
 // class App extends React.Component {
 // 	render() {
@@ -36,7 +36,7 @@ require('cssDir/layout/footer.css');
 // 					onDel={this.props.decrementCopy}
 // 				/>
 // 			</div>
-// 		);
+// 		)
 // 	}
 // }
 //
@@ -44,31 +44,31 @@ require('cssDir/layout/footer.css');
 // 	return {
 // 		reducer: state.reducer,
 // 		reducerCopy: state.reducerCopy
-// 	};
-// };
+// 	}
+// }
 // const mapDispatchToProps = dispatch => {
 // 	return {
 // 		increment: () => store.dispatch({type: 'INCREMENT'}),
 // 		decrement: () => store.dispatch({type: 'DECREMENT'}),
 // 		incrementCopy: () => store.dispatch({type: 'INCREMENTCOPY'}),
 // 		decrementCopy: () => store.dispatch({type: 'DECREMENTCOPY'})
-// 	};
-// };
+// 	}
+// }
 // const AppDom = connect(
 // 	mapStateToProps,
 // 	mapDispatchToProps
-// )(App);
+// )(App)
 
 // ReactDOM.render(
 // 	<Provider store={store}>
 //     	<AppDom />
 //   	</Provider>,
 // 	document.querySelector('#root')
-// );
+// )
 
-import Route from './route.js';
+import Route from './route.js'
 
 ReactDOM.render(
 	<Route />,
 	document.querySelector('#root')
-);
+)
