@@ -1,6 +1,4 @@
-import App from 'jsDir/app.js'
-
 ReactDOM.render(
-	<App />,
+	<h1>Hello, world!</h1>,
 	document.querySelector('#root')
 )
