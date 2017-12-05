@@ -5,7 +5,7 @@
 {{block 'title'}}index page{{/block}}
 
 {{block 'content'}}
-	<div style="height: 200px;background: pink;"></div>
+	<div style="height: 200px;"></div>
 	<div id="root"></div>
-	<div style="height: 200px;background: pink;"></div>
+	<div style="height: 200px;"></div>
 {{/block}}

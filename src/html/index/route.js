@@ -51,6 +51,22 @@ const Topics = ({ match }) => (
   </div>
 )
 
+const Status = ({ code, children }) => (
+  <Route render={({ staticContext }) => {
+    if (staticContext)
+      staticContext.status = code
+    return children
+  }}/>
+)
+
+const NotFound = () => (
+  <Status code={404}>
+    <div>
+      <h1>Sorry, can’t find that.</h1>
+    </div>
+  </Status>
+)
+
 const BasicExample = () => (
   <Router>
     <div>
@@ -58,6 +74,7 @@ const BasicExample = () => (
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/topics">Topics</Link></li>
+		<li><Link to="/anothers">anothers</Link></li>
       </ul>
 
       <hr/>
@@ -65,6 +82,7 @@ const BasicExample = () => (
 		  <Route exact path="/" component={Home}/>
 		  <Route path="/about" component={About}/>
 		  <Route path="/topics" component={Topics}/>
+		  <Route component={NotFound}/>
 	  </Switch>
     </div>
   </Router>

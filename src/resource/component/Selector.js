@@ -5,9 +5,9 @@ class Selector extends React.Component {
 	render() {
 		const { name, value, list, onChange } = this.props
 		return (
-			<select name={ name } onChange={ onChange } value={ value }>
-				<option value={ "" } defaultValue style={ {display: 'none'} }>--请选择您所在地区--</option>
-				{ list }
+			<select name={name} onChange={onChange} value={value}>
+				<option value={""} defaultValue style={{display: 'none'}}>--请选择您所在地区--</option>
+				{list}
 			</select>
 		)
 	}

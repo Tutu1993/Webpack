@@ -6,6 +6,7 @@ const moduleExports = {
 		imgsDir: dirVars.imgsDir,
 		jsDir: dirVars.jsDir,
 		jsonDir: dirVars.jsonDir,
+		reducerDir: dirVars.reducerDir,
 	},
 }
 

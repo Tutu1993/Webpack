@@ -4,6 +4,7 @@ const devServerConfig = {
 	inline: true,
 	progress: true,
 	compress: true,
+	historyApiFallback: true,
 	proxy: {
 		'/interface/*': {
 			target: 'http://localhost:80',

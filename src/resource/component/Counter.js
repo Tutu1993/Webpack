@@ -1,4 +1,7 @@
 class Counter extends React.Component {
+	constructor(props) {
+		super(props)
+	}
 	render() {
 		const { value, onAdd, onDel } = this.props
 		return (
