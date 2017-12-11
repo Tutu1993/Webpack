@@ -1,0 +1,42 @@
+{{extend '../../resource/layout/layout.art'}}
+
+{{block 'meta'}}{{/block}}
+
+{{block 'title'}}创始人 页面{{/block}}
+
+{{block 'content'}}
+<main class="main" style="font-size: 22px">
+	<div>
+		<div>
+			<img src alt="">
+			<h3>汤雁</h3>
+			<span>CEO&创始人</span>
+			<ul>
+				<li>超过10年英国进出口贸易经验，零售系统开发&实施经验</li>
+				<li>英国Loughborough大学硕士，Sonix Ltd创始人</li>
+				<li>北京酷听网VP，北京轻仓科技创始人</li>
+			</ul>
+		</div>
+		<div>
+			<img src alt="">
+			<h3>Annie</h3>
+			<span>COO&联合创始人</span>
+			<ul>
+				<li>曾任职北京华联BHG高级超市总经理，负责全国超过100家BHG华联选址营业</li>
+				<li>近20年超市连锁行业综合管理经验，12年进口食品国际买手</li>
+				<li>清华大学MBA</li>
+			</ul>
+		</div>
+		<div>
+			<img src alt="">
+			<h3>石剑</h3>
+			<span>技术负责人</span>
+			<ul>
+				<li>中科院计算所博士后</li>
+				<li>计算机视觉和深度学习专家</li>
+				<li>曾在微软亚洲研究院从事计算机图形学和视觉领域研究</li>
+			</ul>
+		</div>
+	</div>
+</main>
+{{/block}}

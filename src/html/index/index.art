@@ -5,7 +5,56 @@
 {{block 'title'}}index page{{/block}}
 
 {{block 'content'}}
-	<div style="height: 200px;"></div>
-	<div id="root"></div>
-	<div style="height: 200px;"></div>
+<main class="main" style="font-size: 22px">
+	<section>
+		<ul>
+			<li>凌晨</li>
+			<li>加班回到家，下了出租车</li>
+			<li>冷风扑面而来，不由得裹紧了衣领</li>
+			<li>连续加班一周，家里已无存粮</li>
+			<li>走进小区旁边的无人便利店买一杯热奶茶</li>
+			<li>捧在手心里，真暖</li>
+		</ul>
+		(假装这里有图)
+	</section>
+	<section>
+		<h3>零号介绍</h3>
+		<p>零号元素无人值守便利店</p>
+		<p>是由北京零号元素科技有限公司开发的智能化无人便利店项目。</p>
+		<p>售卖商品主要是进口食品饮料的新型智能型无人值守便利店。</p>
+	</section>
+	<section>
+		<h3>店铺视觉</h3>
+		<p>没有图 没有文字</p>
+	</section>
+	<section>
+		<h3>购物流程</h3>
+		<div>
+			<div>
+				<i>图标</i>
+				<h4>人脸识别</h4>
+				<h4>自动开门</h4>
+				<p>自动捕获人脸信息</p>
+				<p>绑定用户账号，自动开门</p>
+			</div>
+			<div>
+				<i>图标</i>
+				<h4>智能检测购物行为</h4>
+				<h4>系统自动开门</h4>
+				<p>全程监控购物行为</p>
+				<p>购物结束自动识别开门</p>
+			</div>
+			<div>
+				<i>图标</i>
+				<h4>自动识别商品</h4>
+				<p>顾客自行结账</p>
+			</div>
+			<div>
+				<i>图标</i>
+				<h4>自动扣款</h4>
+				<p>二代店规划</p>
+			</div>
+		</div>
+	</section>
+</main>
 {{/block}}

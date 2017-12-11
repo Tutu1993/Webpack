@@ -1,0 +1,11 @@
+{{extend '../../resource/layout/layout.art'}}
+
+{{block 'meta'}}{{/block}}
+
+{{block 'title'}}新闻动态 页面{{/block}}
+
+{{block 'content'}}
+<main class="main" style="font-size: 22px">
+	<a href="https://www.toutiao.com/i6488873156994925069?wxshare_count=2&pbid=6483792115062261261">零号元素获高通投资 引领无人便利店人工智能新风潮</a>
+</main>
+{{/block}}

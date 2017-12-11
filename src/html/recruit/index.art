@@ -1,0 +1,67 @@
+{{extend '../../resource/layout/layout.art'}}
+
+{{block 'meta'}}{{/block}}
+
+{{block 'title'}}投资招募 页面{{/block}}
+
+{{block 'content'}}
+<main class="main">
+	<section class="banner" style="height: 300px; font-size: 12px; text-align: center;background-color: #ccc;line-height: 300px;">
+		假装这里是一张通屏图
+	</section>
+	<section class="content">
+		<div class="merit">
+			<div>
+				<img src alt="">
+				<h4>投资小</h3>
+				<p>20万起</p>
+			</div>
+			<div>
+				<img src alt="">
+				<h4>易管理</h3>
+				<p>全套智能化运营系统</p>
+			</div>
+			<div>
+				<img src alt="">
+				<h4>回报优</h3>
+				<p>一年收回投资成本</p>
+			</div>
+			<div>
+				<img src alt="">
+				<h4>成本低</h3>
+				<p>无需店员0人力成本</p>
+			</div>
+		</div>
+		<div class="policy">
+			<h3>招募政策</h3>
+			<p>合伙人通过投资单店的形式与本公司签订投资协议。<br>单店合伙人可参与选址，或在本公司现有的地址储备库里选址。有店铺资源的合伙人优先。20万元的投资即可成为零号元素无人值守便利店的合伙人，并享受：</p>
+			<ul>
+				<li>店铺选址评估（合伙人自荐地址）</li>
+				<li>店铺视觉设计（国内知名设计团队量身定制，时尚前卫）</li>
+				<li>店铺工程搭建（标准化操作，高质量材质）</li>
+				<li>店铺商品选型（结合商圈人群定位与购买数据，定制商品与运营模块）</li>
+				<li>店铺供货补货（智能数字动态监控，及时进行补货）</li>
+				<li>店铺软硬件技术支持（最新科技成果，专人定期检修维护）</li>
+				<li>店铺品牌传播（店铺品牌宣传、店铺引流、促销活动）</li>
+				<li>店铺运营分析（运营后台可随时查看店铺销售情况）</li>
+			</ul>
+			<span>合作期限：3年</span>
+		</div>
+		<div class="process">
+			<h3>合作流程</h3>
+			<ul>
+				<li>了解投资流程</li>
+				<li>签订投资意向合同</li>
+				<li>选址评估</li>
+				<li>签订正式投资合作协议</li>
+				<li>合伙人单店执照办理</li>
+				<li>装修搭建无人便利店</li>
+				<li>首批物资配送</li>
+				<li>试营业</li>
+				<li>正式营业</li>
+			</ul>
+		</div>
+		<div class="QR-code">关注微信公众号，随时了解更多信息（微信公众号二维码待提供）</div>
+	</section>
+</main>
+{{/block}}

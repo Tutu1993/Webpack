@@ -1,0 +1,71 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.45em 0;
+}
+p {
+  margin: 0 0 1em 0;
+}
+.main {
+  font-size: 12px;
+}
+.content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+.merit {
+  text-align: justify;
+  padding: 40px 0;
+}
+.merit:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+}
+.merit div {
+  display: inline-block;
+  width: 230px;
+  font-size: 12px;
+  text-align: center;
+}
+.merit img {
+  display: block;
+  width: 100%;
+  height: 120px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+}
+.merit h4 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 42px;
+}
+.merit p {
+  font-size: 2rem;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+.policy {
+  font-size: 22px;
+}
+.policy h3 {
+  font-size: 4.8rem;
+  font-weight: 300;
+  line-height: 50px;
+  text-align: center;
+}
+.process {
+  font-size: 22px;
+}
+.process h3 {
+  font-size: 4.8rem;
+  font-weight: 300;
+  line-height: 50px;
+  text-align: center;
+}
