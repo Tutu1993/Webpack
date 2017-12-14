@@ -5,6 +5,9 @@
 {{block 'title'}}index page{{/block}}
 
 {{block 'content'}}
+<section class="banner">
+	<div class="banner-logo"></div>
+</section>
 <main class="main" style="font-size: 22px">
 	<section>
 		<ul>

@@ -1,0 +1,16 @@
+.banner {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background: url("../../imgs/banner.jpg") center center no-repeat;
+  background-size: cover;
+}
+.banner-logo {
+  position: absolute;
+  bottom: 5.5%;
+  right: 10.5%;
+  width: 290px;
+  height: 220px;
+  background: url("../../imgs/logo-red-big.png") center center no-repeat;
+  background-size: cover;
+}

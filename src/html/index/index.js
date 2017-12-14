@@ -1,4 +1,6 @@
-ReactDOM.render(
-	<h1>Hello, world!</h1>,
-	document.querySelector('#root')
-)
+require('cssDir/index/index.css')
+
+const log = console.log.bind(console)
+
+const banner = document.querySelector('.banner')
+banner.style.height = document.documentElement.clientHeight + 'px'
