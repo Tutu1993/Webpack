@@ -6,20 +6,17 @@
 
 {{block 'content'}}
 <section class="banner">
+	<ul class="banner-text">
+		<li>凌晨</li>
+		<li>加班回到家，下了出租车</li>
+		<li>冷风扑面而来，不由得裹紧了衣领</li>
+		<li>连续加班一周，家里已无存粮</li>
+		<li>走进小区旁边的无人便利店买一杯热奶茶</li>
+		<li>捧在手心里，真暖</li>
+	</ul>
 	<div class="banner-logo"></div>
 </section>
 <main class="main" style="font-size: 22px">
-	<section>
-		<ul>
-			<li>凌晨</li>
-			<li>加班回到家，下了出租车</li>
-			<li>冷风扑面而来，不由得裹紧了衣领</li>
-			<li>连续加班一周，家里已无存粮</li>
-			<li>走进小区旁边的无人便利店买一杯热奶茶</li>
-			<li>捧在手心里，真暖</li>
-		</ul>
-		(假装这里有图)
-	</section>
 	<section>
 		<h3>零号介绍</h3>
 		<p>零号元素无人值守便利店</p>
