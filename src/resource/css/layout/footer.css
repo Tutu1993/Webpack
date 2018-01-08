@@ -1,9 +1,10 @@
 .global-footer {
   position: relative;
-  min-width: 1024px;
+  min-width: 1200px;
+  height: 300px;
   overflow: hidden;
-  color: #333;
-  background-color: #f2f2f2;
+  color: #fff;
+  background-color: #000;
   z-index: 1;
   font-size: 0;
 }
@@ -11,214 +12,56 @@
   text-decoration: underline;
 }
 .global-footer .gf-content {
-  max-width: 980px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 22px;
+  padding: 45px 0 55px;
 }
-.global-footer .gf-directory {
-  padding-top: 40px;
-  position: relative;
-  z-index: 1;
-}
-.global-footer .gf-directory > div {
-  float: left;
-  width: 20%;
-  position: relative;
-  min-height: 2px;
-}
-.global-footer .gf-directory > div input[type = 'checkbox'] {
-  display: none;
-}
-.global-footer .gf-directory-column {
-  position: relative;
-  width: 100%;
-  min-height: 2px;
-}
-.global-footer .gf-directory-column label h3 {
-  font-size: 1rem;
-  line-height: 14px;
-  font-weight: 600;
-  margin-bottom: 6px;
-  user-select: none;
-}
-.global-footer .gf-directory-column ~ .gf-directory-column {
-  padding-top: 24px;
-}
-.global-footer .gf-directory-list {
-  margin-right: 20px;
-}
-.global-footer .gf-directory-list li {
-  dispaly: block;
-}
-.global-footer .gf-directory-list li:not(:last-child) {
-  margin-bottom: 6px;
-}
-.global-footer .gf-directory-list li a {
-  color: #555;
-  font-size: 1rem;
-  line-height: 14px;
-}
-.global-footer .gf-footer {
-  padding: 34px 0 21px;
-  color: #888;
-}
-.global-footer .gf-footer > p {
-  font-size: 1rem;
-  line-height: 16px;
-  color: #999;
-}
-.global-footer .gf-footer > p a {
-  color: #999;
-}
-.global-footer .gf-footer-shop {
-  margin-bottom: 7px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #d6d6d6;
-  font-size: 1rem;
-  line-height: 16px;
-}
-.global-footer .gf-footer-shop a {
-  color: #0070c9;
-}
-.global-footer .gf-footer-locale {
-  float: right;
-  position: relative;
-  z-index: 2;
-  padding-top: 3px;
-}
-.global-footer .gf-footer-locale a {
-  display: inline-block;
-  height: 16px;
-  padding-left: 20px;
-  background: url("../../imgs/logo-red.png") left center no-repeat;
-  background-size: 16px 16px;
-  font-size: 1rem;
-  line-height: 18px;
-  color: #555;
-}
-.global-footer .gf-footer-legal {
-  position: relative;
-  padding: 3px 0;
-}
-.global-footer .gf-footer-legal div {
+.global-footer .gf-content > div {
   float: left;
 }
-.global-footer .gf-footer-legal-copyright {
-  margin-right: 30px;
-  font-size: 1rem;
-  line-height: 16px;
+.gf-left p {
+  font-size: 1.4rem;
 }
-.global-footer .gf-footer-legal-links a {
-  display: inline-block;
-  position: relative;
-  top: 1px;
-  font-size: 1rem;
-  line-height: 16px;
-  color: #555;
+.gf-l-img {
+  width: 90px;
+  height: 67px;
+  background: url("../../imgs/logo-big.png") center center no-repeat;
+  margin-bottom: 40px;
 }
-.global-footer .gf-footer-legal-links a:not(:last-child) {
-  margin-right: 10px;
-  padding-right: 12px;
-  border-right: 1px solid #d6d6d6;
+.gf-l-logo {
+  padding: 14px 0 25px;
 }
-@media only screen and (max-width: 1044px) {
-  .global-footer {
-    min-width: 320px;
-  }
-  .global-footer .gf-directory {
-    padding-top: 21px;
-  }
+.gf-l-logo div {
+  float: left;
+  height: 22px;
 }
-@media only screen and (max-width: 767px) {
-  .global-footer .gf-content {
-    padding: 0 16px;
-  }
-  .global-footer .gf-directory {
-    padding-top: 1px;
-  }
-  .global-footer .gf-directory > div {
-    width: 100%;
-  }
-  .global-footer .gf-directory-column {
-    border-bottom: 1px solid #d6d6d6;
-    overflow: hidden;
-  }
-  .global-footer .gf-directory-column label h3 {
-    position: relative;
-    margin-bottom: 0;
-    padding: 10px 0;
-    font-size: 1.2rem;
-    line-height: 18px;
-    background-color: #f2f2f2;
-    cursor: pointer;
-    color: #000;
-    z-index: 2;
-    font-weight: 400;
-  }
-  .global-footer .gf-directory-column label h3:after {
-    content: '+';
-    display: block;
-    position: absolute;
-    top: 12px;
-    right: 4px;
-    width: 14px;
-    height: 14px;
-    font-size: 1.4rem;
-    line-height: 14px;
-    text-align: center;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  }
-  .global-footer .gf-directory-column ~ .gf-directory-column {
-    padding-top: 0;
-  }
-  .global-footer .gf-directory-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    visibility: hidden;
-    margin-right: 0;
-    padding-top: 5px;
-    padding-bottom: 16px;
-    overflow: hidden;
-    z-index: -1;
-    transform: translateY(-100px);
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  }
-  .global-footer .gf-directory-list li:not(:last-child) {
-    margin-bottom: 0;
-  }
-  .global-footer .gf-directory-list li a {
-    display: block;
-    padding: 6px 14px;
-  }
-  .global-footer .gf-footer {
-    padding-top: 17px;
-  }
-  .global-footer .gf-footer-shop {
-    border-bottom: none;
-  }
-  .global-footer .gf-footer-locale {
-    float: none;
-  }
-  .global-footer .gf-footer-legal {
-    padding-top: 12px;
-    padding-bottom: 6px;
-  }
-  .global-footer .gf-footer-legal div {
-    float: none;
-  }
-  .global-footer .gf-footer-legal-copyright {
-    margin-right: 0;
-    padding-bottom: 3px;
-  }
-  .global-footer .gf-directory > div input[type = 'checkbox']:checked + .gf-directory-column label h3:after {
-    transform: rotate(45deg) scale(1.08);
-  }
-  .global-footer .gf-directory > div input[type = 'checkbox']:checked + .gf-directory-column .gf-directory-list {
-    position: static;
-    visibility: visible;
-    z-index: 1;
-    transform: none;
-  }
+.gf-l-logo div:not(:last-child) {
+  margin-right: 15px;
+}
+.gf-l-logo-QQ {
+  width: 20px;
+  background: url("../../imgs/logo-QQ.png") center center no-repeat;
+}
+.gf-l-logo-weixin {
+  width: 25px;
+  background: url("../../imgs/logo-weixin.png") center center no-repeat;
+}
+.gf-l-logo-weibo {
+  width: 27px;
+  background: url("../../imgs/logo-weibo.png") center center no-repeat;
+}
+.gf-r-list h4 {
+  font-size: 1.8rem;
+  margin: 0;
+  padding-bottom: 35px;
+}
+.gf-r-list ul {
+  font-size: 1.2rem;
+}
+.gf-r-list ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.gf-r-list ul li a {
+  color: #fff;
+  cursor: pointer;
 }

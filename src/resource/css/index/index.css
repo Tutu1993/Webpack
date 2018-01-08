@@ -1,34 +1,7 @@
-@font-face {
-  font-family: 'LXGBXK';
-  src: url("LXGBXK.ttf") format('truetype');
-}
 .banner {
   position: relative;
-  height: auto;
+  height: 840px;
   width: 100%;
-  background: url("../../imgs/banner.jpg") center center no-repeat;
-  background-size: cover;
-}
-.banner-text {
-  position: absolute;
-  font-family: 'LXGBXK';
-  color: #fff;
-  font-size: 40px;
-  margin: 0;
-  padding: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.banner-text li:not(:last-child) {
-  margin-bottom: 20px;
-}
-.banner-logo {
-  position: absolute;
-  bottom: 5.5%;
-  right: 10.5%;
-  width: 290px;
-  height: 220px;
-  background: url("../../imgs/logo-red-big.png") center center no-repeat;
+  background: url("../../imgs/index/banner-1.jpg") center center no-repeat;
   background-size: cover;
 }

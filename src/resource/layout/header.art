@@ -1,15 +1,5 @@
-<input type="checkbox" id="gn-menustate"/>
 <nav class="global-nav">
 	<div class="gn-content">
-		<ul class="gn-header">
-			<li class="gn-menuicon">
-				<label for="gn-menustate">
-					<span><span></span></span>
-					<span><span></span></span>
-				</label>
-			</li>
-			<li><a href="/" class="gn-logo"></a></li>
-		</ul>
 		<ul class="gn-list">
 			<li class="gn-item"><a href="/" class="gn-logo"></a></li>
 			<li class="gn-item"><a href="/recruit">投资招募</a></li>
