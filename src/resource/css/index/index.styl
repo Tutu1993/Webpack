@@ -1,4 +1,4 @@
-.swiper-container
+.swiper-banner
 	width 100%
 	min-width 1200px
 	height 840px
@@ -87,10 +87,11 @@
 	h5
 		width 345px
 		height 16px
+		font-size 1rem
 		line-height 16px
 		text-transform uppercase
 		text-align center
-		letter-spacing 10px
+		letter-spacing 9px
 		color #18a0de
 		background #bbeaf8
 		margin 0 0 25px
@@ -104,3 +105,118 @@
 	width 100%
 	min-width 1200px
 	height 450px
+	> div
+		width 1200px
+		margin 0 auto
+		text-align center
+		> h4
+			font-size 3rem
+			font-weight 600
+			line-height 30px
+			margin 0
+			padding-top 50px
+		> h5
+			font-size 1.2rem
+			font-weight 300
+			line-height 30px
+			text-transform uppercase
+			letter-spacing 8px
+			margin 0
+.section-4-list
+	margin-top 50px
+	> div
+		position relative
+		width 300px
+		float left
+		&:not(:last-child)
+			&:after
+				content ''
+				position absolute
+				width 85px
+				border-top 2px dashed rgba(122, 77, 49, 0.2)
+				transform rotate(-45deg)
+				top 125px
+				right -20px
+		p
+			font-size 1.4rem
+			line-height 20px
+			margin 0
+			padding-top 15px
+.section-4-title
+	position relative
+	height 50px
+	h4
+		position absolute
+		width 100%
+		font-size 1.8rem
+		line-height 25px
+		color rgba(0, 0, 0, 0.9)
+		padding 0
+		margin 0
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+.section-4-logo
+	position relative
+	margin 0 auto 20px
+	width 89px
+	height 88px
+	&:after
+		position absolute
+		font-size 6rem
+		font-weight 700
+		line-height 120px
+		color rgba(0, 0, 0, 0.2)
+.logo-face
+	background url('../../imgs/index/logo-face.png') center center no-repeat
+	&:after
+		content '1'
+		top 74px
+		left -26px
+.logo-lock
+	background url('../../imgs/index/logo-lock.png') center center no-repeat
+	&:after
+		content '2'
+		top 74px
+		left -70px
+.logo-code
+	background url('../../imgs/index/logo-code.png') center center no-repeat
+	&:after
+		content '3'
+		top 74px
+		left -52px
+.logo-pay
+	background url('../../imgs/index/logo-pay.png') center center no-repeat
+	&:after
+		content '4'
+		top 74px
+		left -90px
+.section-5
+	background #f2f2f2
+	padding 50px 0
+.swiper-coverflow
+	width 1200px
+	margin 0 auto
+	text-align center
+	> h4
+		font-size 3rem
+		font-weight 600
+		line-height 30px
+		margin 0
+	> h5
+		font-size 1.2rem
+		font-weight 300
+		line-height 30px
+		text-transform uppercase
+		letter-spacing 8px
+		margin 0
+		padding-bottom 10px
+	.swiper-slide
+		background-position center
+		background-size cover
+		width 394px
+		height 521px
+.list-1
+	width 394px
+	height 521px
+	background url('../../imgs/index/list-1.jpg') center center no-repeat

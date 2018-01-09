@@ -5,7 +5,7 @@
 {{block 'title'}}首页{{/block}}
 
 {{block 'content'}}
-<section class="swiper-container">
+<section class="swiper-container swiper-banner">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide banner-1st"></div>
 		<div class="swiper-slide banner-1st"></div>
@@ -13,7 +13,7 @@
 		<div class="swiper-slide banner-1st"></div>
 	</div>
 	<div class="banner-arrow"></div>
-	<div class="swiper-pagination"></div>
+	<div class="swiper-pagination pagination-banner"></div>
 </section>
 <section class="section-2">
 	<div class="section-2-text">
@@ -29,5 +29,65 @@
 		<p>是由北京零号元素科技有限公司开发的智能化<br />无人便利店项目。售卖商品主要是进口食品饮<br />料的新型智能型无人值守便利店。</p>
 	</div>
 </section>
-<section class="section-4"></section>
+<section class="section-4">
+	<div>
+		<h4>购物流程</h4>
+		<h5>Shopping process</h5>
+		<div class="section-4-list clear">
+			<div>
+				<div class="section-4-logo logo-face"></div>
+				<div class="section-4-title">
+					<h4>人脸识别<br />自动开门</h4>
+				</div>
+				<p>自动捕获人脸信息<br />绑定用户账号，自动开门</p>
+			</div>
+			<div>
+				<div class="section-4-logo logo-lock"></div>
+				<div class="section-4-title">
+					<h4>智能检测购物行为<br />系统自动开门</h4>
+				</div>
+				<p>全程监控购物行为<br />购物结束自动识别开门</p>
+			</div>
+			<div>
+				<div class="section-4-logo logo-code"></div>
+				<div class="section-4-title">
+					<h4>自动识别商品</h4>
+				</div>
+				<p>系统自动在店门口<br />处识别您的商品</p>
+			</div>
+			<div>
+				<div class="section-4-logo logo-pay"></div>
+				<div class="section-4-title">
+				<h4>自动扣款<br />支付宝代扣或微信代扣</h4>
+				</div>
+				<p>无须扫码支付，系统自动扣款，<br />交易完成</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section-5">
+	<div class="swiper-container swiper-coverflow">
+		<h4>实体店铺展示</h4>
+		<h5>Shop display</h5>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="list-1"></div>
+			</div>
+			<div class="swiper-slide">
+				<div class="list-1"></div>
+			</div>
+			<div class="swiper-slide">
+				<div class="list-1"></div>
+			</div>
+			<div class="swiper-slide">
+				<div class="list-1"></div>
+			</div>
+			<div class="swiper-slide">
+				<div class="list-1"></div>
+			</div>
+		</div>
+		<p>北京三里屯店</p>
+		<a>点击查看更多</a>
+	</div>
+</section>
 {{/block}}

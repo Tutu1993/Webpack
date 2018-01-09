@@ -1,5 +1,5 @@
 <footer class="global-footer">
-	<div class="gf-content">
+	<div class="gf-content clear">
 		<div class="gf-left">
 			<div class="gf-l-img"></div>
 			<p>北京零号元素科技有限公司</p>
@@ -10,7 +10,7 @@
 			</div>
 			<p>Copyright © 2017 ofo Inc. 保留所有权利。</p>
 		</div>
-		<div class="gf-right">
+		<div class="gf-right clear">
 			<div class="gf-r-list">
 				<h4>主要产品</h4>
 				<ul>
