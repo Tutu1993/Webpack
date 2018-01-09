@@ -10,6 +10,7 @@ const pluginsConfig = [
 		React: 'react',
 		ReactDOM: 'react-dom',
 		PropTypes: 'prop-types',
+		Swiper: 'vendorDir/swiper.min.js',
 	}),
 ]
 

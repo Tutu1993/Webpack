@@ -2,5 +2,11 @@ require('cssDir/index/index.css')
 
 const log = console.log.bind(console)
 
-const banner = document.querySelector('.banner')
-banner.style.height = document.documentElement.clientHeight + 'px'
+const swiper = new Swiper('.swiper-container', {
+	direction: 'vertical',
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+})

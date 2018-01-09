@@ -1,6 +1,106 @@
-.banner
-	position relative
+.swiper-container
+	width 100%
+	min-width 1200px
+	height 840px
+.banner-1st
 	height 840px
 	width 100%
 	background url('../../imgs/index/banner-1.jpg') center center no-repeat
 	background-size cover
+.swiper-pagination-bullet
+	background #7c7c7c
+	opacity 1
+	position relative
+.swiper-container-vertical
+	> .swiper-pagination-bullets
+		.swiper-pagination-bullet
+			margin 10px 0
+.swiper-pagination-bullet-active
+	background #fff
+	&:after
+		content ''
+		position absolute
+		width 18px
+		height 18px
+		border 1px solid #fff
+		border-radius 50%
+		top -6px
+		left -6px
+.banner-arrow
+	position absolute
+	width 33px
+	height 25px
+	background url('../../imgs/index/logo-arrow.png') center center no-repeat
+	bottom 15px
+	left calc(50% - 16px)
+	z-index 10
+.section-2
+	position relative
+	width 100%
+	min-width 1200px
+	height 840px
+	background url('../../imgs/index/section-2.jpg') center center no-repeat
+	background-size cover
+.section-2-text
+	position absolute
+	width 340px
+	top 190px
+	left calc(50% - 650px)
+	p
+		margin 0
+		font-size 1.8rem
+		line-height 30px
+		text-align center
+		color #a9a9aa
+.section-2-title
+	width 227px
+	height 105px
+	background url('../../imgs/index/text-1.png') center center no-repeat
+	margin-bottom 40px
+.section-3
+	position relative
+	width 100%
+	min-width 1200px
+	height 840px
+	background url('../../imgs/index/section-3.jpg') center center no-repeat
+	background-size cover
+.section-3-logo
+	position absolute
+	width 90px
+	height 67px
+	background url('../../imgs/logo-big.png') center center no-repeat
+	top 85px
+	left calc(50% - 540px)
+.section-3-text
+	position absolute
+	width 360px
+	color #fff
+	top 360px
+	left calc(50% + 110px)
+	h4
+		font-size 3rem
+		font-weight 300
+		line-height 30px
+		margin 0 0 10px
+		span
+			font-weight bold
+	h5
+		width 345px
+		height 16px
+		line-height 16px
+		text-transform uppercase
+		text-align center
+		letter-spacing 10px
+		color #18a0de
+		background #bbeaf8
+		margin 0 0 25px
+	p
+		font-size 1.8rem
+		font-weight 500
+		line-height 26px
+		margin 0
+.section-4
+	position relative
+	width 100%
+	min-width 1200px
+	height 450px

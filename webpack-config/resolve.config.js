@@ -7,6 +7,7 @@ const moduleExports = {
 		jsDir: dirVars.jsDir,
 		jsonDir: dirVars.jsonDir,
 		reducerDir: dirVars.reducerDir,
+		vendorDir: dirVars.vendorDir,
 	},
 }
 

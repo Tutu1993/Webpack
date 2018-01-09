@@ -21,6 +21,8 @@ moduleExports.jsonDir = path.resolve(moduleExports.resourceDir, './json') // jso
 
 moduleExports.reducerDir = path.resolve(moduleExports.resourceDir, './reducer') // reducer 目录
 
+moduleExports.vendorDir = path.resolve(moduleExports.resourceDir, './vendor') // vendor 目录
+
 moduleExports.distDir = path.resolve(moduleExports.staticRootDir, './dist') // dist 目录
 
 module.exports = moduleExports

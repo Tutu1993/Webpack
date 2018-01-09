@@ -5,7 +5,29 @@
 {{block 'title'}}首页{{/block}}
 
 {{block 'content'}}
-<section class="banner"></section>
-<section style="height: 500px">
+<section class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide banner-1st"></div>
+		<div class="swiper-slide banner-1st"></div>
+		<div class="swiper-slide banner-1st"></div>
+		<div class="swiper-slide banner-1st"></div>
+	</div>
+	<div class="banner-arrow"></div>
+	<div class="swiper-pagination"></div>
 </section>
+<section class="section-2">
+	<div class="section-2-text">
+		<div class="section-2-title"></div>
+		<p>加班回到家，下了出租车<br />冷风扑面而来，不由得裹紧了衣领<br />连续加班一周，家里已无存粮<br />走进小区旁边的无人便利店买一杯热奶茶<br />捧在手心里，真暖</p>
+	</div>
+</section>
+<section class="section-3">
+	<div class="section-3-logo"></div>
+	<div class="section-3-text">
+		<h4><span>零号元素·</span>无人值守便利店</h4>
+		<h5>24 hours unattended</h5>
+		<p>是由北京零号元素科技有限公司开发的智能化<br />无人便利店项目。售卖商品主要是进口食品饮<br />料的新型智能型无人值守便利店。</p>
+	</div>
+</section>
+<section class="section-4"></section>
 {{/block}}
