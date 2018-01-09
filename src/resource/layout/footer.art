@@ -19,6 +19,54 @@
 					<li><a>metamind</a></li>
 				</ul>
 			</div>
+			<div class="gf-r-list">
+				<h4>核心技术</h4>
+				<ul>
+					<li><a>卷积神经网络</a></li>
+					<li><a>深度学习</a></li>
+					<li><a>机器视觉</a></li>
+					<li><a>生物识别</a></li>
+					<li><a>生物支付</a></li>
+				</ul>
+			</div>
+			<div class="gf-r-list">
+				<h4>解决方案</h4>
+				<ul>
+					<li><a>智能零售</a></li>
+					<li><a>社交娱乐</a></li>
+					<li><a>机器人</a></li>
+					<li><a>智慧社区</a></li>
+				</ul>
+			</div>
+			<div class="gf-r-list">
+				<h4>关于我们</h4>
+				<ul>
+					<li><a>公司介绍</a></li>
+					<li><a>公司动态</a></li>
+					<li><a>联系我们</a></li>
+					<li><a>加入我们</a></li>
+				</ul>
+			</div>
+			<div class="gf-r-list">
+				<h4>联系我们</h4>
+				<ul>
+					<li>
+						<p>商务合作：</p>
+						<p>Jiangj@deepblueai.com</p>
+						<p>021-61049288</p>
+					</li>
+					<li>
+						<p>售后支持：</p>
+						<p>service@deepblueai.com</p>
+						<p>021-64190728</p>
+					</li>
+					<li>
+						<p>媒体采访：</p>
+						<p>dingyb@quixmart.com</p>
+						<p>021-61049288</p>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </footer>

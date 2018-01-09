@@ -16,7 +16,7 @@
   margin: 0 auto;
   padding: 45px 0 55px;
 }
-.global-footer .gf-content > div {
+.gf-left {
   float: left;
 }
 .gf-left p {
@@ -49,6 +49,18 @@
 .gf-l-logo-weibo {
   width: 27px;
   background: url("../../imgs/logo-weibo.png") center center no-repeat;
+}
+.gf-right {
+  float: right;
+}
+.gf-r-list {
+  float: left;
+}
+.gf-r-list:last-child {
+  margin-right: 90px;
+}
+.gf-r-list:not(:last-child) {
+  margin-right: 50px;
 }
 .gf-r-list h4 {
   font-size: 1.8rem;

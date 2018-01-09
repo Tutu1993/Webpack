@@ -14,9 +14,8 @@
 	max-width 1200px
 	margin 0 auto
 	padding 45px 0 55px
-	> div
-		float left
 .gf-left
+	float left
 	p
 		font-size 1.4rem
 .gf-l-img
@@ -40,7 +39,14 @@
 .gf-l-logo-weibo
 	width 27px
 	background url('../../imgs/logo-weibo.png') center center no-repeat
+.gf-right
+	float right
 .gf-r-list
+	float left
+	&:last-child
+		margin-right 90px
+	&:not(:last-child)
+		margin-right 50px
 	h4
 		font-size 1.8rem
 		margin 0
