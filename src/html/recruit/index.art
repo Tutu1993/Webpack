@@ -5,63 +5,155 @@
 {{block 'title'}}投资招募 页面{{/block}}
 
 {{block 'content'}}
-<main class="main">
-	<section class="banner" style="height: 300px; font-size: 12px; text-align: center;background-color: #ccc;line-height: 300px;">
-		假装这里是一张通屏图
-	</section>
-	<section class="content">
-		<div class="merit">
-			<div>
-				<img src alt="">
-				<h4>投资小</h3>
-				<p>20万起</p>
-			</div>
-			<div>
-				<img src alt="">
-				<h4>易管理</h3>
-				<p>全套智能化运营系统</p>
-			</div>
-			<div>
-				<img src alt="">
-				<h4>回报优</h3>
-				<p>一年收回投资成本</p>
-			</div>
-			<div>
-				<img src alt="">
-				<h4>成本低</h3>
-				<p>无需店员0人力成本</p>
+<section class="banner"></section>
+<section class="global-title part-2">
+	<h4>投资优势</h4>
+	<h5>Investment advantage</h5>
+	<div class="part-2-list clear">
+		<div>
+			<div class="part-2-logo logo-money"></div>
+			<h4>投资小</h4>
+			<h5>10-15万</h5>
+		</div>
+		<div>
+			<div class="part-2-logo logo-gear"></div>
+			<h4>易管理</h4>
+			<h5>全套智能化运营系统</h5>
+		</div>
+		<div>
+			<div class="part-2-logo logo-up"></div>
+			<h4>回报优</h4>
+			<h5>一年收回投资成本</h5>
+		</div>
+		<div>
+			<div class="part-2-logo logo-part"></div>
+			<h4>成本低</h4>
+			<h5>无需店员，0人力成本</h5>
+		</div>
+	</div>
+</section>
+<section class="global-title part-3">
+	<h4>招募政策</h4>
+	<h5>Recruitment policy</h5>
+	<div class="part-3-list clear">
+		<div>
+			<div class="part-3-img part-3-1"></div>
+			<div class="part-3-text">
+				<h5>合伙人通过投资单店的形式与<br />本公司签订投资协议<br />合作期限：3年</h5>
 			</div>
 		</div>
-		<div class="policy">
-			<h3>招募政策</h3>
-			<p>合伙人通过投资单店的形式与本公司签订投资协议。<br>单店合伙人可参与选址，或在本公司现有的地址储备库里选址。有店铺资源的合伙人优先。20万元的投资即可成为零号元素无人值守便利店的合伙人，并享受：</p>
-			<ul>
-				<li>店铺选址评估（合伙人自荐地址）</li>
-				<li>店铺视觉设计（国内知名设计团队量身定制，时尚前卫）</li>
-				<li>店铺工程搭建（标准化操作，高质量材质）</li>
-				<li>店铺商品选型（结合商圈人群定位与购买数据，定制商品与运营模块）</li>
-				<li>店铺供货补货（智能数字动态监控，及时进行补货）</li>
-				<li>店铺软硬件技术支持（最新科技成果，专人定期检修维护）</li>
-				<li>店铺品牌传播（店铺品牌宣传、店铺引流、促销活动）</li>
-				<li>店铺运营分析（运营后台可随时查看店铺销售情况）</li>
-			</ul>
-			<span>合作期限：3年</span>
+		<div>
+			<div class="part-3-img part-3-2"></div>
+			<div class="part-3-text">
+				<h5>单店合伙人可参与选址，或在<br />本公司现有的地址储备库里选<br />址</h5>
+			</div>
 		</div>
-		<div class="process">
-			<h3>合作流程</h3>
-			<ul>
-				<li>了解投资流程</li>
-				<li>签订投资意向合同</li>
-				<li>选址评估</li>
-				<li>签订正式投资合作协议</li>
-				<li>合伙人单店执照办理</li>
-				<li>装修搭建无人便利店</li>
-				<li>首批物资配送</li>
-				<li>试营业</li>
-				<li>正式营业</li>
-			</ul>
+		<div>
+			<div class="part-3-img part-3-3"></div>
+			<div class="part-3-text">
+				<h5>有店铺资源的合伙人优先</h5>
+			</div>
 		</div>
-		<div class="QR-code">关注微信公众号，随时了解更多信息（微信公众号二维码待提供）</div>
-	</section>
-</main>
+		<div>
+			<div class="part-3-img part-3-4"></div>
+			<div class="part-3-text">
+				<h5>10万元的投资即可成为零号元<br />素无人值守便利店的合伙人</h5>
+			</div>
+		</div>
+	</div>
+	<div class="part-3-content">
+		<h4>享受特权</h4>
+		<div class="part-3-list-2 clear">
+			<div>
+				<h4>店铺视觉设计</h4>
+				<p>国内知名设计团队量身<br />定制，时尚前卫</p>
+			</div>
+			<div>
+				<h4>店铺选址评估</h4>
+				<p>合伙人自荐地址</p>
+			</div>
+			<div>
+				<h4>店铺工程搭建</h4>
+				<p>标准化操作，高质量材质</p>
+			</div>
+			<div>
+				<h4>店铺商品选型</h4>
+				<p>结合商圈人群定位与购<br />买数据，定制商品与运营模块</p>
+			</div>
+
+			<div>
+				<h4>店铺供货补货</h4>
+				<p>智能数字动态监控，及时<br />进行补货</p>
+			</div>
+			<div>
+				<h4>店铺软硬件技术支持</h4>
+				<p>最新科技成果，专人定期<br />检修维护</p>
+			</div>
+			<div>
+				<h4>店铺品牌传播</h4>
+				<p>店铺品牌宣传、店铺引流、<br />促销活动</p>
+			</div>
+			<div>
+				<h4>店铺运营分析</h4>
+				<p>运营后台可随时查看店<br />铺销售情况</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="global-title part-4">
+	<h4>合作流程</h4>
+	<h5>Cooperation process</h5>
+	<div class="part-4-content">
+		<ul>
+			<li>了解投资流程</li>
+			<li>签订投资意向合同</li>
+			<li>选址评估</li>
+			<li class="active">签订正式投资合作协议</li>
+			<li>合伙人单店执照办理</li>
+			<li>装修搭建无人便利店</li>
+			<li>首批物资配送</li>
+			<li>试营业</li>
+			<li>正式营业</li>
+		</ul>
+	</div>
+	<h4>加盟意向</h4>
+	<h5>Intention to join</h5>
+	<form class="form-style" id="form-contact">
+		<div class="form-line clear">
+			<span>姓名：</span>
+			<input type="text" name="name">
+		</div>
+		<div class="form-line form-sex clear">
+			<span>性别：</span>
+			<input type="radio" name="sex" value="male" id="sex-male" checked>
+			<label for="sex-male">男</label>
+			<input type="radio" name="sex" value="female" id="sex-female">
+			<label for="sex-female">女</label>
+		</div>
+		<div class="form-line clear">
+			<span>联系方式：</span>
+			<input type="text" name="phone">
+		</div>
+		<div class="form-line clear">
+			<span>是否有实体店铺：</span>
+			<input type="radio" name="shop" value="true" id="shop-true" checked>
+			<label for="shop-true">有</label>
+			<input type="radio" name="shop" value="false" id="shop-false">
+			<label for="shop-false">无</label>
+		</div>
+		<div class="form-line clear">
+			<span>区域：</span>
+			<input type="text" name="area">
+		</div>
+		<input type="button" name="submit" value="提交加盟意向" id="form-submit">
+	</form>
+</section>
+<section class="part-5">
+	<div class="part-5-phone"></div>
+	<div class="part-5-QR">
+		<h4>#关注微信公众号，随时了解更多信息#</h4>
+		<img src="../../resource/imgs/recruit/logo-QR.jpg" />
+		<img src="../../resource/imgs/recruit/logo-QR.jpg" />
+	</div>
+</section>
 {{/block}}

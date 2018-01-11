@@ -1,54 +1,256 @@
-h1, h2, h3, h4, h5, h6
-	margin 0 0 .45em 0
-p
-	margin 0 0 1em 0
-.main
-	font-size 12px
-.content
-	max-width 980px
+.banner
+	width 100%
+	min-width 1200px
+	height 700px
+	background url('../../imgs/recruit/banner.jpg') center center no-repeat
+	border-top 60px solid #000
+.global-title
+	text-align center
+	min-width 1200px
+	padding 60px 0
+	> h4
+		font-size 3rem
+		font-weight 600
+		line-height 30px
+		margin 0
+	> h5
+		font-size 1.2rem
+		font-weight 300
+		line-height 30px
+		text-transform uppercase
+		letter-spacing 8px
+		margin 0
+		padding-bottom 60px
+.part-2-list
+	width 1140px
 	margin 0 auto
-	padding 0 22px
-// merit part
-.merit
-	text-align justify
-	padding 40px 0
-	&:after
+	> div
+		float left
+		width 285px
+		h4
+			font-size 1.8rem
+			line-height 30px
+			margin 0
+			padding-top 20px
+		h5
+			font-size 1.6rem
+			font-weight normal
+			line-height 26px
+			margin 0
+			padding-top 10px
+.part-2-logo
+	width 120px
+	height 120px
+	margin 0 auto
+.logo-money
+	background url('../../imgs/recruit/logo-money.png') center center no-repeat #18a0de
+.logo-gear
+	background url('../../imgs/recruit/logo-gear.png') center center no-repeat #18a0de
+.logo-up
+	background url('../../imgs/recruit/logo-up.png') center center no-repeat #18a0de
+.logo-part
+	background url('../../imgs/recruit/logo-part.png') center center no-repeat #18a0de
+.part-3
+	background #f2f2f2
+.part-3-list
+	width 1140px
+	margin 0 auto
+	> div
+		float left
+		width 270px
+		height 340px
+		background #18a0de
+		color #fff
+		box-shadow 3px 10px 10px rgba(#000000, 0.3)
+		&:not(:last-child)
+			margin-right 20px
+		h5
+			font-size 1.6rem
+			line-height 32px
+			width 100%
+			margin 0
+			position absolute
+			top 50%
+			transform translateY(-50%)
+.part-3-img
+	width 270px
+	height 210px
+.part-3-1
+	background url('../../imgs/recruit/part-3-1.jpg') center center no-repeat
+.part-3-2
+	background url('../../imgs/recruit/part-3-2.jpg') center center no-repeat
+.part-3-3
+	background url('../../imgs/recruit/part-3-3.jpg') center center no-repeat
+.part-3-4
+	background url('../../imgs/recruit/part-3-4.jpg') center center no-repeat
+.part-3-text
+	position relative
+	height 130px
+.part-3-content
+	> h4
+		position relative
+		width 140px
+		font-size 2.4rem
+		line-height 30px
+		color #ff8400
+		margin 60px auto 0
+		background #f2f2f2
+		overflow hidden
+		z-index 10
+	&:before
 		content ''
+		position absolute
+		width 330px
+		margin-top 15px
+		margin-left -165px
+		border-top 1px solid #d9d9d9
+.part-3-list-2
+	width 1000px
+	margin 0 auto
+	padding-bottom 60px
+	> div
+		position relative
+		float left
+		width 220px
+		margin-top 60px
+		&:not(:nth-child(4n))
+			margin-right 40px
+			&:after
+				content ''
+				position absolute
+				height 45px
+				border-left 1px dashed #d9d9d9
+				top 5px
+				right 0
+		> h4
+			position absolute
+			font-size 1.6rem
+			line-height 24px
+			color #fff
+			background #ff8400
+			margin 0
+			padding 0 5px
+		> p
+			font-size 1.6rem
+			line-height 22px
+			margin 0
+			padding-top 30px
+			text-align left
+.part-4-content
+	position relative
+	width 1200px
+	height 550px
+	margin 0 auto
+	background url('../../imgs/recruit/bg-4.png') 140px center no-repeat
+	text-align left
+	padding-top 30px
+	ul
+		position absolute
+		right 170px
+	li
+		font-size 1.8rem
+		line-height 26px
+		position relative
+		&:before
+			content ''
+			position absolute
+			width 8px
+			height 8px
+			border 1px solid #18a0de
+			border-radius 50%
+			top 8px
+			left -65px
+		&:not(:last-child)
+			margin-bottom 30px
+		&.active
+			color #18a0de
+			&:before
+				background #18a0de
+.form-style
+	width 720px
+	height 340px
+	margin -25px auto 0
+	background #18a0de
+	color #fff
+	padding-top 40px
+	text-align center
+	input[type="button"]
+		width 170px
+		height 40px
+		font-size 1.8rem
+		line-height 40px
+		font-weight 700
+		background #fff
+		border none
+		border-radius 20px
+		color #18a0de
+		margin-top 30px
+		cursor pointer
+.form-line
+	font-size 1.8rem
+	line-height 48px
+	text-align left
+	border-bottom 1px dashed #46b3e5
+	span
 		display inline-block
-		width 100%
-		font-size 0
-		line-height 0
-	div
+		padding-left 140px
+		width 144px
+		text-align right
+	input[type="text"]
+		background transparent
+		border none
+	input[type="radio"]
+		display none
+	label
 		display inline-block
-		width 230px
-		font-size 12px
-		text-align center
-	img
-		display block
-		width 100%
-		height 120px
-		background-color #ccc
-		margin-bottom 20px
+		position relative
+		text-align right
+		width 45px
+		&:before
+			content ''
+			position absolute
+			width 5px
+			height 5px
+			padding 1px
+			border 1px solid #fff
+			border-radius 50%
+			top 20px
+			left 10px
+		&:after
+			display none
+			content ''
+			position absolute
+			width 5px
+			height 5px
+			border-radius 50%
+			top 22px
+			left 12px
+			background #fff
+	input[type="radio"]:checked + label
+		&:after
+			display block
+.part-5
+	position relative
+	width 100%
+	min-width 1200px
+	height 436px
+	background url('../../imgs/recruit/bg-5.jpg') center center no-repeat
+.part-5-phone
+	position absolute
+	width 368px
+	height 537px
+	top -110px
+	left calc(50% - 525px)
+	background url('../../imgs/recruit/phone.png') center center no-repeat
+.part-5-QR
+	position absolute
+	width 380px
+	text-align center
+	margin 0 0 25px
+	top 95px
+	left calc(50% + 80px)
 	h4
-		font-size 4rem
-		font-weight 300
-		line-height 42px
-	p
-		font-size 2rem
-		line-height 22px
-		margin-bottom 0
-// policy part
-.policy
-	font-size 22px
-	h3
-		font-size 4.8rem
-		font-weight 300
-		line-height 50px
-		text-align center
-.process
-	font-size 22px
-	h3
-		font-size 4.8rem
-		font-weight 300
-		line-height 50px
-		text-align center
+		font-size 1.8rem
+		line-height 26px
+	img:not(:last-child)
+		margin-right 45px
