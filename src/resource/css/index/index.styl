@@ -3,10 +3,14 @@
 	min-width 1200px
 	height 840px
 	border-top 60px solid #000
-.banner-1st
+.banner
 	height 840px
 	width 100%
+.banner-1st
 	background url('../../imgs/index/banner-1.jpg') center center no-repeat
+	background-size cover
+.banner-2nd
+	background url('../../imgs/index/banner-2.jpg') center center no-repeat
 	background-size cover
 .swiper-pagination-bullet
 	background #7c7c7c
@@ -110,19 +114,20 @@
 		width 1200px
 		margin 0 auto
 		text-align center
-		> h4
-			font-size 3rem
-			font-weight 600
-			line-height 30px
-			margin 0
-			padding-top 50px
-		> h5
-			font-size 1.2rem
-			font-weight 300
-			line-height 30px
-			text-transform uppercase
-			letter-spacing 8px
-			margin 0
+.section-4-header
+	> h4
+		font-size 3rem
+		font-weight 600
+		line-height 30px
+		margin 0
+		padding-top 50px
+	> h5
+		font-size 1.2rem
+		font-weight 300
+		line-height 30px
+		text-transform uppercase
+		letter-spacing 8px
+		margin 0
 .section-4-list
 	margin-top 50px
 	> div
@@ -195,10 +200,7 @@
 .section-5
 	background #f2f2f2
 	padding 50px 0
-.swiper-coverflow
-	width 1200px
-	margin 0 auto
-	text-align center
+.section-5-header
 	> h4
 		font-size 3rem
 		font-weight 600
@@ -212,6 +214,7 @@
 		letter-spacing 8px
 		margin 0
 		padding-bottom 10px
+.section-5-footer
 	> p
 		font-size 1.6rem
 		line-height 22px
@@ -226,6 +229,10 @@
 		color #fff
 		border-radius 12px
 		margin 0 auto
+.swiper-coverflow
+	width 1200px
+	margin 0 auto
+	text-align center
 	.swiper-slide
 		background-position center
 		background-size cover

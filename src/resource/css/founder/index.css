@@ -1,0 +1,106 @@
+.banner {
+  width: 100%;
+  min-width: 1200px;
+  height: 700px;
+  background: url("../../imgs/recruit/banner.jpg") center center no-repeat;
+  border-top: 60px solid #000;
+}
+.content {
+  width: 100%;
+  min-width: 1200px;
+  height: 2029px;
+  background: url("../../imgs/founder/bg-2.jpg") center center no-repeat;
+  color: #fff;
+}
+.content-header > h4 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+  padding-top: 90px;
+  text-align: center;
+}
+.content-header > h4:before,
+.content-header > h4:after {
+  content: '';
+  position: absolute;
+  width: 210px;
+  border-top: 2px solid #89cef1;
+}
+.content-header > h4:before {
+  margin-top: 15px;
+  margin-left: -225px;
+}
+.content-header > h4:after {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.content-header > h5 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 0;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.list-box {
+  width: 1200px;
+  height: 525px;
+  margin: 0 auto;
+  background: #000503;
+}
+.list-box:not(:last-child) {
+  margin-bottom: 30px;
+}
+.list-box > div {
+  float: left;
+}
+.list-img {
+  width: 313px;
+  height: 429px;
+  position: relative;
+  top: 50px;
+  left: 122px;
+}
+.list-1 {
+  background: url("../../imgs/founder/list-1.jpg") center center no-repeat;
+}
+.list-2 {
+  background: url("../../imgs/founder/list-2.jpg") center center no-repeat;
+}
+.list-3 {
+  background: url("../../imgs/founder/list-3.jpg") center center no-repeat;
+}
+.list-content {
+  position: relative;
+  top: 190px;
+  left: 257px;
+}
+.list-content > h4 {
+  font-size: 1.6rem;
+  line-height: 26px;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 40px;
+}
+.list-content > h4 > span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.list-content > p {
+  font-size: 1.6rem;
+  line-height: 26px;
+  margin: 0;
+}
+.list-content:before {
+  content: '';
+  position: absolute;
+  height: 160px;
+  border-left: 1px solid #828485;
+  top: 53px;
+  left: -40px;
+}

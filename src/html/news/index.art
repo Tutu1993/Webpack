@@ -5,7 +5,62 @@
 {{block 'title'}}新闻动态 页面{{/block}}
 
 {{block 'content'}}
-<main class="main" style="font-size: 22px">
-	<a href="https://www.toutiao.com/i6488873156994925069?wxshare_count=2&pbid=6483792115062261261">零号元素获高通投资 引领无人便利店人工智能新风潮</a>
-</main>
+<section class="banner"></section>
+<section class="content clear">
+	<div class="content-nav">
+		<ul class="nav-list">
+			<li>媒体报道</li>
+			<li>官方新闻</li>
+			<li>官方活动</li>
+			<li>官方微信</li>
+			<li>官方微博</li>
+		</ul>
+		<div class="QR-list">
+			<p>扫码关注，了解更多资讯</p>
+			<img src="../../resource/imgs/news/logo-QR.jpg" />
+			<img src="../../resource/imgs/news/logo-QR.jpg" />
+		</div>
+	</div>
+	<div class="news-list list-1st">
+		<img src="../../resource/imgs/news/news-1.jpg" />
+		<h4>零号元素获高通投资 引领无人便利店人工智能新风潮</h4>
+		<p>便利店风口来袭，各路人马纷纷涌入，而零号元素无人便利店项目试图走出一定差异化。不同于其他便利店，零号元素在模式上并不开设自营店，而是纯加盟模式，相当于提供了改造和运营的解决和管理方案；零号元素的另一个差异化在于，目前主打进口食品。</p>
+		<a>查看原文></a>
+	</div>
+	<div class="news-list">
+		<img src="../../resource/imgs/news/news-1.jpg" />
+		<h4>零号元素获高通投资 引领无人便利店人工智能新风潮</h4>
+		<p>便利店风口来袭，各路人马纷纷涌入，而零号元素无人便利店项目试图走出一定差异化。不同于其他便利店，零号元素在模式上并不开设自营店，而是纯加盟模式，相当于提供了改造和运营的解决和管理方案；零号元素的另一个差异化在于，目前主打进口食品。</p>
+		<a>查看原文></a>
+	</div>
+	<div class="news-list">
+		<img src="../../resource/imgs/news/news-1.jpg" />
+		<h4>零号元素获高通投资 引领无人便利店人工智能新风潮</h4>
+		<p>便利店风口来袭，各路人马纷纷涌入，而零号元素无人便利店项目试图走出一定差异化。不同于其他便利店，零号元素在模式上并不开设自营店，而是纯加盟模式，相当于提供了改造和运营的解决和管理方案；零号元素的另一个差异化在于，目前主打进口食品。</p>
+		<a>查看原文></a>
+	</div>
+	<div class="news-list">
+		<img src="../../resource/imgs/news/news-1.jpg" />
+		<h4>零号元素获高通投资 引领无人便利店人工智能新风潮</h4>
+		<p>便利店风口来袭，各路人马纷纷涌入，而零号元素无人便利店项目试图走出一定差异化。不同于其他便利店，零号元素在模式上并不开设自营店，而是纯加盟模式，相当于提供了改造和运营的解决和管理方案；零号元素的另一个差异化在于，目前主打进口食品。</p>
+		<a>查看原文></a>
+	</div>
+	<div class="news-list">
+		<img src="../../resource/imgs/news/news-1.jpg" />
+		<h4>零号元素获高通投资 引领无人便利店人工智能新风潮</h4>
+		<p>便利店风口来袭，各路人马纷纷涌入，而零号元素无人便利店项目试图走出一定差异化。不同于其他便利店，零号元素在模式上并不开设自营店，而是纯加盟模式，相当于提供了改造和运营的解决和管理方案；零号元素的另一个差异化在于，目前主打进口食品。</p>
+		<a>查看原文></a>
+	</div>
+	<div class="pagination">
+		<ul>
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>></li>
+		</ul>
+	</div>
+</section>
 {{/block}}

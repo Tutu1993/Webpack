@@ -7,10 +7,10 @@
 {{block 'content'}}
 <section class="swiper-container swiper-banner">
 	<div class="swiper-wrapper">
-		<div class="swiper-slide banner-1st"></div>
-		<div class="swiper-slide banner-1st"></div>
-		<div class="swiper-slide banner-1st"></div>
-		<div class="swiper-slide banner-1st"></div>
+		<div class="swiper-slide banner banner-1st"></div>
+		<div class="swiper-slide banner banner-2nd"></div>
+		<div class="swiper-slide banner banner-1st"></div>
+		<div class="swiper-slide banner banner-1st"></div>
 	</div>
 	<div class="banner-arrow"></div>
 	<div class="swiper-pagination pagination-banner"></div>
@@ -31,8 +31,10 @@
 </section>
 <section class="section-4">
 	<div>
-		<h4>购物流程</h4>
-		<h5>Shopping process</h5>
+		<div class="section-4-header">
+			<h4>购物流程</h4>
+			<h5>Shopping process</h5>
+		</div>
 		<div class="section-4-list clear">
 			<div>
 				<div class="section-4-logo logo-face"></div>
@@ -67,8 +69,10 @@
 </section>
 <section class="section-5">
 	<div class="swiper-container swiper-coverflow">
-		<h4>实体店铺展示</h4>
-		<h5>Shop display</h5>
+		<div class="section-5-header">
+			<h4>实体店铺展示</h4>
+			<h5>Shop display</h5>
+		</div>
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
 				<div class="list-1"></div>
@@ -86,8 +90,10 @@
 				<div class="list-1"></div>
 			</div>
 		</div>
-		<p>北京三里屯店</p>
-		<a>点击查看更多</a>
+		<div class="section-5-footer">
+			<p>北京三里屯店</p>
+			<a>点击查看更多</a>
+		</div>
 	</div>
 </section>
 {{/block}}

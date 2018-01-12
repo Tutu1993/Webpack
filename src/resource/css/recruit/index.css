@@ -5,7 +5,9 @@
   background: url("../../imgs/recruit/banner.jpg") center center no-repeat;
   border-top: 60px solid #000;
 }
-.global-title {
+.part-2,
+.part-3,
+.part-4 {
   text-align: center;
   min-width: 1200px;
   padding: 60px 0;
@@ -110,7 +112,7 @@
   position: relative;
   height: 130px;
 }
-.part-3-content > h4 {
+.part-3-content-header > h4 {
   position: relative;
   width: 140px;
   font-size: 2.4rem;
@@ -121,7 +123,7 @@
   overflow: hidden;
   z-index: 10;
 }
-.part-3-content:before {
+.part-3-content-header:before {
   content: '';
   position: absolute;
   width: 330px;

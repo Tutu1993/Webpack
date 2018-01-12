@@ -1,0 +1,90 @@
+.banner {
+  width: 100%;
+  min-width: 1200px;
+  height: 700px;
+  background: url("../../imgs/recruit/banner.jpg") center center no-repeat;
+  border-top: 60px solid #000;
+}
+.content {
+  width: 100%;
+  min-width: 1200px;
+  height: 855px;
+  background: url("../../imgs/investor/bg-2.jpg") center center no-repeat;
+  color: #fff;
+}
+.content-header > h4 {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 0;
+  padding-top: 90px;
+  text-align: center;
+}
+.content-header > h4:before,
+.content-header > h4:after {
+  content: '';
+  position: absolute;
+  width: 210px;
+  border-top: 2px solid rgba(255,255,255,0.5);
+}
+.content-header > h4:before {
+  margin-top: 15px;
+  margin-left: -225px;
+}
+.content-header > h4:after {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.content-header > h5 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 0;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.list-box {
+  width: 1050px;
+  margin: 0 auto;
+  position: relative;
+}
+.list-box:not(:last-child) {
+  margin-bottom: 90px;
+}
+.list-img {
+  width: 300px;
+  height: 146px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.list-1 {
+  background: url("../../imgs/investor/logo-1.png") center center no-repeat #0564ad;
+}
+.list-2 {
+  background: url("../../imgs/investor/logo-2.png") center center no-repeat #ba2b21;
+}
+.list-content {
+  position: relative;
+  width: 670px;
+  margin-left: 380px;
+}
+.list-content > h4 {
+  font-size: 1.6rem;
+  line-height: 26px;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 15px;
+}
+.list-content > p {
+  font-size: 1.6rem;
+  line-height: 26px;
+  margin: 0;
+}
+.list-content > p + p {
+  margin-top: 5px;
+}

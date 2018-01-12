@@ -1,0 +1,130 @@
+.banner {
+  width: 100%;
+  min-width: 1200px;
+  height: 700px;
+  background: url("../../imgs/recruit/banner.jpg") center center no-repeat;
+  border-top: 60px solid #000;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.content > div {
+  float: left;
+}
+.content-nav {
+  width: 300px;
+  height: 675px;
+  background: #18a0de;
+  margin-right: 35px;
+  color: #fff;
+}
+.nav-list {
+  width: 148px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  padding-top: 35px;
+}
+.nav-list li {
+  font-size: 1.6rem;
+  line-height: 26px;
+  position: relative;
+}
+.nav-list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.nav-list li:not(:last-child):after {
+  content: '';
+  position: absolute;
+  width: 148px;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  bottom: -15px;
+  left: 0;
+}
+.QR-list {
+  width: 148px;
+  margin: 0 auto 55px;
+  text-align: center;
+  padding-top: 50px;
+}
+.QR-list p {
+  font-size: 1.2rem;
+  line-height: 26px;
+  margin: 0;
+  padding-bottom: 5px;
+}
+.QR-list img + img {
+  margin-top: 5px;
+}
+.news-list {
+  width: 585px;
+  height: 545px;
+  margin-bottom: 55px;
+  position: relative;
+}
+.news-list img {
+  width: 585px;
+}
+.news-list h4,
+.news-list p {
+  font-size: 1.6rem;
+  line-height: 26px;
+  margin: 0;
+}
+.news-list h4 {
+  text-align: center;
+  padding: 30px 0 20px;
+}
+.news-list a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.news-list:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+.list-1st {
+  width: 865px;
+  height: 675px;
+}
+.list-1st img {
+  width: 865px;
+}
+.pagination {
+  width: 330px;
+  height: 30px;
+  padding: 0;
+  position: relative;
+  left: 435px;
+  margin-bottom: 150px;
+}
+.pagination ul {
+  width: 330px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+.pagination ul li {
+  float: left;
+  width: 46px;
+  height: 28px;
+  border: 1px solid #dcdcdc;
+  font-size: 1.2rem;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.pagination ul li:not(:last-child) {
+  border-right: none;
+}
+.pagination ul li.active {
+  color: #fff;
+  background: #18a0de;
+  border: 1px solid #18a0de;
+}
+.pagination ul li.active:not(:last-child) {
+  border-right: none;
+}
