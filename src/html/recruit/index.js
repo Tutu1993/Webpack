@@ -1,5 +1,14 @@
 require('cssDir/recruit/index.css')
 
+const swiper = new Swiper('.swiper-banner', {
+	direction: 'vertical',
+	loop: true,
+	pagination: {
+		el: '.pagination-banner',
+		clickable: true,
+	},
+})
+
 function fetchDemo() {
     const form = new FormData(document.querySelector('#form-contact'))
 

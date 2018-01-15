@@ -5,7 +5,6 @@
 {{block 'title'}}新闻动态 页面{{/block}}
 
 {{block 'content'}}
-<section class="banner"></section>
 <section class="content clear">
 	<div class="content-nav">
 		<ul class="nav-list">

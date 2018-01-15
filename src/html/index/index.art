@@ -5,16 +5,6 @@
 {{block 'title'}}首页{{/block}}
 
 {{block 'content'}}
-<section class="swiper-container swiper-banner">
-	<div class="swiper-wrapper">
-		<div class="swiper-slide banner banner-1st"></div>
-		<div class="swiper-slide banner banner-2nd"></div>
-		<div class="swiper-slide banner banner-1st"></div>
-		<div class="swiper-slide banner banner-1st"></div>
-	</div>
-	<div class="banner-arrow"></div>
-	<div class="swiper-pagination pagination-banner"></div>
-</section>
 <section class="section-2">
 	<div class="section-2-text">
 		<div class="section-2-title"></div>

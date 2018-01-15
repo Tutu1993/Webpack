@@ -54,3 +54,55 @@
   background: url("../../imgs/logo-small.png") center center no-repeat;
   background-size: 24px 40px;
 }
+.swiper-banner {
+  width: 100%;
+  min-width: 1200px;
+  height: 840px;
+  border-top: 60px solid #000;
+}
+.banner {
+  height: 840px;
+  width: 100%;
+}
+.banner-1st {
+  background: url("../../imgs/index/banner-1.jpg") center center no-repeat;
+  background-size: cover;
+}
+.banner-2nd {
+  background: url("../../imgs/index/banner-2.jpg") center center no-repeat;
+  background-size: cover;
+}
+.banner-3rd {
+  background: url("../../imgs/index/banner-3.jpg") center center no-repeat;
+  background-size: cover;
+}
+.swiper-pagination-bullet {
+  background: #7c7c7c;
+  opacity: 1;
+  position: relative;
+}
+.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 10px 0;
+}
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+.swiper-pagination-bullet-active:after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  top: -6px;
+  left: -6px;
+}
+.banner-arrow {
+  position: absolute;
+  width: 33px;
+  height: 25px;
+  background: url("../../imgs/index/logo-arrow.png") center center no-repeat;
+  bottom: 15px;
+  left: calc(50% - 16px);
+  z-index: 10;
+}
