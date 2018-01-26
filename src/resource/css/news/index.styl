@@ -2,6 +2,7 @@
 	width 1200px
 	margin 0 auto
 	padding-top 40px
+	padding-bottom 150px
 	> div
 		float left
 .content-nav
@@ -47,6 +48,7 @@
 	margin-bottom 55px
 	position relative
 	img
+		height 340px
 		width 585px
 	h4, p
 		font-size 1.6rem
@@ -60,13 +62,25 @@
 		right 0
 		bottom 0
 		cursor pointer
+		&:hover
+			text-decoration underline
+	p
+		text-overflow -o-ellipsis-lastline
+		overflow hidden
+		text-overflow ellipsis
+		display -webkit-box
+		-webkit-line-clamp 4
+		-webkit-box-orient vertical
 	&:nth-child(2n + 1)
 		margin-right 30px
 .list-1st
 	width 865px
 	height 675px
 	img
+		height 500px
 		width 865px
+	p
+		-webkit-line-clamp 3
 .pagination
 	width 330px
 	height 30px

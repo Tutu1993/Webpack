@@ -2,6 +2,7 @@
   width: 1200px;
   margin: 0 auto;
   padding-top: 40px;
+  padding-bottom: 150px;
 }
 .content > div {
   float: left;
@@ -58,6 +59,7 @@
   position: relative;
 }
 .news-list img {
+  height: 340px;
   width: 585px;
 }
 .news-list h4,
@@ -76,6 +78,17 @@
   bottom: 0;
   cursor: pointer;
 }
+.news-list a:hover {
+  text-decoration: underline;
+}
+.news-list p {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
 .news-list:nth-child(2n + 1) {
   margin-right: 30px;
 }
@@ -84,7 +97,11 @@
   height: 675px;
 }
 .list-1st img {
+  height: 500px;
   width: 865px;
+}
+.list-1st p {
+  -webkit-line-clamp: 3;
 }
 .pagination {
   width: 330px;

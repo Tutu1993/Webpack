@@ -68,21 +68,19 @@
 				<div class="list-1"></div>
 			</div>
 			<div class="swiper-slide">
-				<div class="list-1"></div>
+				<div class="list-2"></div>
 			</div>
 			<div class="swiper-slide">
-				<div class="list-1"></div>
+				<div class="list-3"></div>
 			</div>
 			<div class="swiper-slide">
-				<div class="list-1"></div>
-			</div>
-			<div class="swiper-slide">
-				<div class="list-1"></div>
+				<div class="list-4"></div>
 			</div>
 		</div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
 		<div class="section-5-footer">
-			<p>北京三里屯店</p>
-			<a>点击查看更多</a>
+			<p id="shop-id"></p>
 		</div>
 	</div>
 </section>

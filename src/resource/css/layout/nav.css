@@ -48,6 +48,9 @@
 .global-nav .gn-item a:hover {
   opacity: 0.65;
 }
+.global-nav .gn-item.active a {
+  opacity: 0.65;
+}
 .global-nav .gn-logo {
   width: 24px;
   height: 40px;
@@ -70,10 +73,6 @@
 }
 .banner-2nd {
   background: url("../../imgs/index/banner-2.jpg") center center no-repeat;
-  background-size: cover;
-}
-.banner-3rd {
-  background: url("../../imgs/index/banner-3.jpg") center center no-repeat;
   background-size: cover;
 }
 .swiper-pagination-bullet {
