@@ -31,10 +31,10 @@ const coverflow = new Swiper('.swiper-coverflow', {
 		modifier: 1,
 		slideShadows : true,
 	},
-	// autoplay: {
-	// 	delay: 5000,
-	// 	disableOnInteraction: false,
-	// },
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
+	},
 	on: {
 		transitionEnd: function(){
 			const id = document.querySelector(".swiper-coverflow .swiper-slide-active").children[0].classList[0]

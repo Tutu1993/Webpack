@@ -1,6 +1,12 @@
 require('cssDir/recruit/index.css')
 
+document.querySelectorAll(".gn-item")[1].classList.add("active")
+
 const swiper = new Swiper('.swiper-banner', {
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
 	direction: 'vertical',
 	loop: true,
 	pagination: {
