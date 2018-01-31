@@ -134,9 +134,9 @@
 		</div>
 		<div class="form-line form-sex clear">
 			<span>性别：</span>
-			<input type="radio" name="sex" value="male" id="sex-male" checked>
+			<input type="radio" name="sex" value="1" id="sex-male" checked>
 			<label for="sex-male">男</label>
-			<input type="radio" name="sex" value="female" id="sex-female">
+			<input type="radio" name="sex" value="2" id="sex-female">
 			<label for="sex-female">女</label>
 		</div>
 		<div class="form-line clear">
