@@ -2,7 +2,7 @@
 
 {{block 'meta'}}{{/block}}
 
-{{block 'title'}}新闻动态 页面{{/block}}
+{{block 'title'}}新闻动态 - 零号无人便利店{{/block}}
 
 {{block 'content'}}
 <section class="content clear">

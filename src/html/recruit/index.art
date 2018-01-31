@@ -2,7 +2,7 @@
 
 {{block 'meta'}}{{/block}}
 
-{{block 'title'}}投资招募 页面{{/block}}
+{{block 'title'}}投资招募 - 零号无人便利店{{/block}}
 
 {{block 'content'}}
 <section class="part-2">

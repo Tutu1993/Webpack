@@ -2,7 +2,7 @@
 
 {{block 'meta'}}{{/block}}
 
-{{block 'title'}}公司介绍{{/block}}
+{{block 'title'}}公司介绍 - 零号无人便利店{{/block}}
 
 {{block 'content'}}
 <section class="part-2">

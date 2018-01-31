@@ -2,11 +2,11 @@
 	<div class="gn-content">
 		<ul class="gn-list">
 			<li class="gn-item"><a href="/" class="gn-logo"></a></li>
-			<li class="gn-item"><a href="/recruit">投资招募</a></li>
-			<li class="gn-item"><a href="/intro">公司介绍</a></li>
-			<li class="gn-item"><a href="/news">新闻动态</a></li>
-			<li class="gn-item"><a href="/founder">创始人</a></li>
-			<li class="gn-item"><a href="/investor">投资人</a></li>
+			<li class="gn-item"><a href="/recruit/index.html">投资招募</a></li>
+			<li class="gn-item"><a href="/intro/index.html">公司介绍</a></li>
+			<li class="gn-item"><a href="/news/index.html">新闻动态</a></li>
+			<li class="gn-item"><a href="/founder/index.html">创始人</a></li>
+			<li class="gn-item"><a href="/investor/index.html">投资人</a></li>
 		</ul>
 	</div>
 </nav>

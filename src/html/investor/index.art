@@ -2,7 +2,7 @@
 
 {{block 'meta'}}{{/block}}
 
-{{block 'title'}}投资人 页面{{/block}}
+{{block 'title'}}投资人 - 零号无人便利店{{/block}}
 
 {{block 'content'}}
 <section class="content">

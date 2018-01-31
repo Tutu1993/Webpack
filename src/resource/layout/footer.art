@@ -2,23 +2,9 @@
 	<div class="gf-content clear">
 		<div class="gf-left">
 			<div class="gf-l-img"></div>
-			<p>北京零号元素科技有限公司</p>
-			<div class="gf-l-logo clear">
-				<div class="gf-l-logo-QQ"></div>
-				<div class="gf-l-logo-weixin"></div>
-				<div class="gf-l-logo-weibo"></div>
-			</div>
-			<p>Copyright © 2017 ofo Inc. 保留所有权利。</p>
+			<p>Copyright © 2017 zonezero Inc. 保留所有权利。</p>
 		</div>
 		<div class="gf-right clear">
-			<div class="gf-r-list">
-				<h4>主要产品</h4>
-				<ul>
-					<li><a>quiXmart</a></li>
-					<li><a>TakeGo</a></li>
-					<li><a>metamind</a></li>
-				</ul>
-			</div>
 			<div class="gf-r-list">
 				<h4>核心技术</h4>
 				<ul>
@@ -39,31 +25,19 @@
 				</ul>
 			</div>
 			<div class="gf-r-list">
-				<h4>关于我们</h4>
-				<ul>
-					<li><a>公司介绍</a></li>
-					<li><a>公司动态</a></li>
-					<li><a>联系我们</a></li>
-					<li><a>加入我们</a></li>
-				</ul>
-			</div>
-			<div class="gf-r-list">
 				<h4>联系我们</h4>
 				<ul>
 					<li>
 						<p>商务合作：</p>
-						<p>Jiangj@deepblueai.com</p>
-						<p>021-61049288</p>
+						<p>tsc@zonezero.cn</p>
 					</li>
 					<li>
 						<p>售后支持：</p>
-						<p>service@deepblueai.com</p>
-						<p>021-64190728</p>
+						<p>xuwei@zonezero.cn</p>
 					</li>
 					<li>
 						<p>媒体采访：</p>
-						<p>dingyb@quixmart.com</p>
-						<p>021-61049288</p>
+						<p>fanwen@zonezero.cn</p>
 					</li>
 				</ul>
 			</div>
