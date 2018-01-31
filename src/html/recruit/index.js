@@ -18,8 +18,8 @@ const swiper = new Swiper('.swiper-banner', {
 function fetchDemo() {
     const form = new FormData(document.querySelector('#form-contact'))
 
-	if (!/^[\u4E00-\u9FA5\uf900-\ufa2d·s]{2,20}$/.test(form.get('name'))) {
-		alert('请确认为姓名为中文')
+	if (form.get('name') === '') {
+		alert('请确认姓名不为空')
 		return
 	}
 	if (form.get('phone') === '') {
