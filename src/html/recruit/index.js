@@ -18,7 +18,7 @@ const swiper = new Swiper('.swiper-banner', {
 function fetchDemo() {
     const form = new FormData(document.querySelector('#form-contact'))
 
-    fetch('/interface/post.php', {
+    fetch('http://zero.puziapp.com.cn/investment/add', {
         method: 'POST',
         body: form,
     })
@@ -31,7 +31,7 @@ function fetchDemo() {
 
             // Examine the text in the response
             response.json().then(function(data) {
-				console.log(data)
+				console.log(JSON.stringify(data))
             })
         })
         .catch(function(err) {
